@@ -1,0 +1,63 @@
+.navigaiton {
+  width: 120px;
+  justify-content: space-around;
+  background: #454545;
+  height: 100vh;
+  padding-top: 50px;
+  top: 0;
+  position: fixed; }
+  .navigaiton a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 13px;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0; }
+    .navigaiton a:hover {
+      background: #035079; }
+
+#osu-top-hat {
+  width: 100vw;
+  display: flex;
+  height: 50px;
+  background: #454545;
+  color: white;
+  font-weight: 200;
+  font-family: sans-serif;
+  z-index: 10; }
+  #osu-top-hat a {
+    padding-left: 15px; }
+  #osu-top-hat p {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    margin: 0; }
+
+body {
+  margin: 0;
+  width: 100vw; }
+
+.total {
+  display: flex;
+  width: 100vw; }
+
+.right {
+  width: calc(100vw - 120px);
+  margin-left: 120px;
+  font-family: sans-serif;
+  line-height: 1.5;
+  padding: 0 0 0 10px; }
+  .right p, .right li {
+    font-size: 12pt; }
+
+#selected {
+  color: grey; }
+
+.center {
+  text-align: center; }
+
+/*# sourceMappingURL=syllabus.css.map */

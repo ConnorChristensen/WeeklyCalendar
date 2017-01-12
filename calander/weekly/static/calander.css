@@ -1,0 +1,19 @@
+table {
+    background: #267e6a;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    margin: auto;
+    width: 90vw;
+    text-align: center;
+}
+
+table tr td {
+    width: 100px;
+    padding: 5px 0;
+}
+
+.selected {
+    background: #40c9aa;
+    border-radius: 5px;
+}

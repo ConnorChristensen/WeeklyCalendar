@@ -1,0 +1,89 @@
+.navigaiton {
+  width: 120px;
+  justify-content: space-around;
+  background: #454545;
+  height: 100vh; }
+  .navigaiton a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 13px;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0; }
+    .navigaiton a:hover {
+      background: #035079; }
+
+#osu-top-hat {
+  width: 100vw;
+  display: flex;
+  height: 50px;
+  background: #454545;
+  color: white;
+  font-weight: 200;
+  font-family: sans-serif; }
+  #osu-top-hat a {
+    padding-left: 15px; }
+  #osu-top-hat p {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    margin: 0; }
+
+body {
+  margin: 0; }
+
+.total {
+  display: flex;
+  width: 100vw; }
+
+.right {
+  width: calc(100vw - 120px);
+  text-align: center; }
+
+.calanderContainer {
+  width: 100%; }
+
+.calendar {
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: center;
+  background: #037dbe;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-weight: 300;
+  margin: 0 auto; }
+  .calendar th {
+    font-size: 16pt;
+    font-weight: 300;
+    padding: 10px 0; }
+  .calendar tr:nth-child(-n+2) {
+    background: #004f79;
+    cursor: default; }
+  .calendar tr td {
+    padding: 10px;
+    width: 25px;
+    height: 25px; }
+  .calendar tr .active:hover {
+    background: #004f79;
+    cursor: pointer; }
+  .calendar #currentDate {
+    background: #61a4ff;
+    border-radius: 20%; }
+  .calendar #project {
+    background: #b54343; }
+    .calendar #project:hover {
+      background: #863f3f; }
+  .calendar #design {
+    background: #b54343; }
+    .calendar #design:hover {
+      background: #863f3f; }
+  .calendar #lecture {
+    background: green; }
+    .calendar #lecture:hover {
+      background: #004d00; }
+
+/*# sourceMappingURL=calander.css.map */

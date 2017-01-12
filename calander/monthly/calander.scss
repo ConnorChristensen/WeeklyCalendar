@@ -1,0 +1,81 @@
+@import '../navigation';
+
+body {
+    margin: 0;
+}
+
+.total {
+    display: flex;
+    width: 100vw;
+}
+
+.right {
+    width: calc(100vw - 120px);
+    text-align: center;
+}
+
+$header: #004f79;
+$calander: #037dbe;
+$calanderHover: #004f79;
+$currentDate: #a00f0f;
+$assignmentDue: #b54343;
+$assignmentDueHover: #863f3f;
+$assignmentDesignDue: #d06d6d;
+$assignmentDesignDueHover: #aa5757;
+$lecture: blue;
+$lectureHover: blue;
+
+.calendar {
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: center;
+    margin: auto;
+    background: $calander;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-weight: 300;
+    th {
+        font-size: 16pt;
+        font-weight: 300;
+        padding: 10px 0;
+    }
+    tr {
+        &:nth-child(-n+2) {
+            background: $header;
+            cursor: default;
+        }
+        td {
+            padding: 10px;
+            width: 25px;
+            height: 25px;
+        }
+        .active:hover {
+            background: $calanderHover;
+            cursor: pointer;
+        }
+    }
+    #currentDate {
+        span {
+            background: $currentDate;
+            border-radius: 50%;
+            display: flex;
+            height: 30px;
+            width: 30px;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    #project {
+        background: $assignmentDue;
+        &:hover {
+            background: $assignmentDueHover;
+        }
+    }
+    #design {
+        background: $assignmentDue;
+        &:hover {
+            background: $assignmentDueHover;
+        }
+    }
+}

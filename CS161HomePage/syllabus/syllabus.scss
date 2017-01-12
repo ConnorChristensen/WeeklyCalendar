@@ -1,0 +1,30 @@
+@import "../navigation";
+
+body {
+    margin: 0;
+    width: 100vw;
+}
+
+.total {
+    display: flex;
+    width: 100vw;
+}
+
+.right {
+    width: calc(100vw - 120px);
+    margin-left: 120px;
+    font-family: sans-serif;
+    line-height: 1.5;
+    padding: 0 0 0 10px;
+    p, li {
+        font-size: 12pt;
+    }
+}
+
+#selected {
+    color: grey;
+}
+
+.center {
+    text-align: center;
+}
