@@ -7,3 +7,4 @@ TABios/pics
 **/*.map
 **/*.html
 **/.sass-cache
+node_modules/
