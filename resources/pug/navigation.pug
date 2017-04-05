@@ -1,0 +1,14 @@
+mixin navigation(traceback, current)
+    div.topBar
+        h2 CS 161 - Introduction to Computer Science
+        nav
+            if current === "home"
+                a(href=traceback+"index.html").selected home
+            else
+                a(href=traceback+"index.html").unselected home
+
+            each name, path in {"syllabus":"syllabus", "calendar":"calendar", "assignments":"assignments", "labs":"labs", "recitations":"recitations", "links":"useful links", "clubs":"student clubs", "TABios":"TA Bios"}
+                if current === path
+                    a(href=traceback+path+"/"+path+".html").selected=name
+                else
+                    a(href=traceback+path+"/"+path+".html").unselected=name

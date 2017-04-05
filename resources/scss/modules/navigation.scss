@@ -1,0 +1,64 @@
+@import "../variables/colors";
+@import "../variables/fonts";
+
+.topBar {
+    font-family: $lato;
+    font-weight: 300;
+    background: $orange;
+    h2 {
+        margin: 0;
+        padding: 10px 0;
+        color: white;
+        text-align: center;
+    }
+    nav {
+        background: $dark-grey;
+        display: flex;
+        justify-content: space-around;
+        line-height: 50px;
+        width: 100vw;
+        .unselected {
+            text-decoration: none;
+            width: 100%;
+            text-align: center;
+            color: white;
+            text-transform: capitalize;
+            transition: .5s;
+            &:hover {
+                transition: .5s;
+                background: #af4811;
+            }
+        }
+        .selected {
+            background: #696969;
+            text-decoration: none;
+            width: 100%;
+            text-align: center;
+            color: white;
+            text-transform: capitalize;
+            cursor: default;
+        }
+    }
+}
+
+.extraSpace {
+    margin-top: 50px;
+}
+
+.fix-place {
+    position: fixed;
+    top: 0;
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        flex-wrap: wrap;
+    }
+    .fix-place {
+        position: static;
+        top: 0;
+    }
+    .extraSpace {
+        margin-top: 0px;
+    }
+}
