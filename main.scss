@@ -1,0 +1,91 @@
+@import "resources/scss/modules/navigation";
+@import "resources/scss/variables/reset";
+
+#contactInfo {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.announcements {
+    margin-left: 80px;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+.header {
+    font-size: 15pt;
+    color: red;
+    text-decoration: underline;
+}
+
+.books a img,
+.books a iframe {
+    width: 100px;
+    height: 130px;
+}
+
+.classInfo {
+    font-size: 14px;
+    .labInfo {
+        font-size: 14px;
+        tr:nth-child(2) {
+            text-align: center;
+        }
+        td:nth-child(1) {
+            text-align: center;
+        }
+    }
+}
+
+.labs {
+    text-align: center;
+}
+
+.labsTable {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 11pt;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    tr td {
+        background: #767676;
+        padding: 5px;
+        width: auto;
+    }
+    tr:nth-child(1) td {
+        font-size: 13pt;
+        background: #454545;
+    }
+    tr:not(:nth-child(1)) td:nth-child(4){
+        text-align: left;
+    }
+}
+
+.taNames div {
+    display: flex;
+}
+
+@media screen and (min-width: 850px) {
+    .taNames div {
+        display: inline-block;
+        width: 150px;     
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .labsTable {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .taNames div {
+        display: block;
+        width: 100px;     
+    }
+}
