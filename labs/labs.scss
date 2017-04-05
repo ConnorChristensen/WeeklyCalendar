@@ -1,0 +1,22 @@
+@import "../resources/scss/modules/navigation";
+@import "../resources/scss/variables/reset";
+
+.content {
+    padding: 0 2vw;
+    h2 {
+        text-align: center;
+        font-weight: 700;
+    }
+}
+
+.instructions {
+    max-width: 700px;
+    margin: auto;
+}
+
+.assignments {
+    margin: 50px auto 0 auto;
+    td {
+        padding: 7px;
+    }
+}

@@ -1,0 +1,56 @@
+doctype html
+
+html(lang="en")
+    head
+        include ../resources/pug/head.pug
+        title="CS 161 Labs"
+        link(href="labs.css", rel="stylesheet")
+
+    body
+        include ../resources/pug/navigation.pug
+        +navigation("../", "labs")
+        
+        div.content
+            div.instructions
+                h2 Labs
+                p If you attended a lab and did not finish, you can finish <b>up to 3 points of the lab at home</b> and bring it with you to the next week's lab for a grade.  You must show your update from the previous lab within the first 15 minutes of the current lab to redeem points on the prior lab, otherwise the work is not accepted.
+
+            table.assignments
+                tr                      
+                    td LAB #1 - 
+                    td 
+                        a(href="labs/lab1.pdf") Setup &amp; Introduction to Unix, vim, and C++ 
+                tr                              
+                    td LAB #2 - 
+                    td
+                        a(href="labs/lab2.pdf") Constants, Variables, Expressions, Random Numbers, and If/Else 
+                tr                              
+                    td LAB #3 - 
+                    td
+                        a(href="labs/lab3.pdf") Guess Who Game: More Decisions, Loops, and Strings 
+                tr                              
+                    td LAB #4 - 
+                    td
+                        a(href="labs/lab4.pdf")
+                tr                              
+                    td LAB #5 - 
+                    td WEEK 5 Practice Proficiency Demos: DEAR 115 (W 8-9:50am &amp; F 8-11:50am), ROGERS 336 (All Others)
+                tr
+                    td LAB #6 - 
+                    td
+                        a(href="labs/lab6.pdf")
+                tr                              
+                    td LAB #7 - 
+                    td
+                        a(href="labs/lab7.pdf")
+                tr                              
+                    td LAB #8 - 
+                    td
+                        a(href="labs/lab8.pdf")
+                tr                              
+                    td LAB #9 - 
+                    td
+                        a(href="labs/lab9.pdf")
+                tr                              
+                    td LAB #10 - 
+                    td WEEK 10 Practice Proficiency Demos: DEAR 115 (W 8-9:50am &amp; F 8-11:50am), ROGERS 336 (All Others)
