@@ -1,0 +1,167 @@
+doctype html
+
+html(lang="en")
+    head
+        include ../resources/pug/head.pug
+        title="TA Bios"
+        link(href="TABios.css", rel="stylesheet")
+
+    body
+        include ../resources/pug/navigation.pug
+        +navigation("../", "TABios")
+
+        -
+            var ta = 
+            [
+                {
+                    name: "Dan Van Horn",
+                    picture: "dan.jpg",
+                    description: "Hey! My name is Dan and I am a Junior in Computer Science. I took the CS 16X series last year and I had no prior experience programming. I had a great experience with all of the TAs here who are all eager to share their knowledge. CS is challenging and may seem daunting at times but is also extremely rewarding and fun! Remember, I am here for YOU and I want everyone to have a positive experience in this class!"
+                },
+                {
+                    name: "Courtney Miller",
+                    picture: "courtney.jpg",
+                    description: "Hello, my name is Courtney and I am a Junior studying Computer Science. I, like many others, did not have any coding experience when I started attending OSU, but ended up falling in love with the major within my first term. Don't hesitate to stop by office hours if you feel like you're having a hard time!"
+                },
+                {
+                    name: "Seth Gipe",
+                    picture: "seth.jpg",
+                    description: "Hey there everyone I'm Seth! I'm a 5th year senior in ECE and I'm in NROTC. Like Megan, I too TA for ECE112 and enjoy it tremendously. There are few things more enjoyable than seeing an idea \"click\" in a student's mind and I've found that making complex topics more relatable and understandable comes naturally to me. I grew up in central Texas and moved here for college. I have a long standing interest in music, especially the technical aspects of musical instruments and equipment. I've played guitar for almost 10 years. I enjoy anything that involves working with my hands: building cars, computers, or circuits; and subsequently taking them apart. Lastly, my senior design project is to extend a home network using emerging LoRa technology."
+                },
+                {
+                    name: "Matthew Lohr",
+                    picture: "matthew.jpg",
+                    description: "Hey! I'm Matthew and I'm a sophomore here in Electrical Engineering with a minor in Computer Science, and maybe Math too, we'll see. Outside of school, I like to play music, eat sushi, and rock climb. If those are things you like, let's be friends. Anyways, I went to a really small private high school in the Portland area, and the most technical computer class we had was learning how to use Photoshop. So I didn't know any code whatsoever when I came here last year and started in CS 161, which is probably similar to many of you as well. Please, never be too shy to ask us questions, we are literally only here to help you, that's the only reason. Computer Science is tough for a lot of people, but if you work hard and don't let yourself get discouraged, I'm confident all of you can do it (but you have to actually put in the work... sorry... that's how it works). Feel free to send me an email or drop in to office hours anytime with questions or just to talk! Have a good term!"
+                },
+                {
+                    name: "Lily Shellhammer",
+                    picture: "lily.jpg",
+                    description: "Hello! I'm Lily, I'm a Junior studying computer science and math. I like outdoors and indoors. I’m not a regular TA, I’m a cool TA."
+                },
+                {
+                    name: "Alex Niebur",
+                    picture: "alex.jpg",
+                    description: "Bonjour! My name is Alexander Niebur, but just call me Alex. I am a sophomore Computer Science Systems student in the pro-school program. This is my second term as a TA and I am readily available to help you succeed! I started studying Computer Science during my senior year of high school and whilst I struggled at first, I managed to get a hang of it halfway through the year. This class might seem daunting at first, and you need help, send me an email, and I will find time in my schedule to assist you, even on weekends! Besides Computer Science, I also volunteer at Orange Media Network as a member of their gaming show Split Screen. My primary job for the show is audio engineering, but from time to time, I have been on camera and having a good time!"
+                },
+                {
+                    name: "Lucas Campos-Davis",
+                    picture: "Lucas.jpg",
+                    description: "Hi, my name is Lucas and I’m a second year CS major. When I came to OSU I had absolutely no programming experience. I’m from Hood River, Oregon but surprisingly I don’t windsurf or kiteboard. In my free time I enjoy spending time outdoors hiking, camping, and running. For the days that outside is less than fun, I enjoy watching Netflix, playing a variety of video games, and reading (My current favorite series is The dresden Files)."
+                },
+                {
+                    name: "Aidan Carson",
+                    picture: "null",
+                    description: "Hey! My name’s Aidan, and I’m a sophomore in Computer Science. I grew up in Corvallis, so I know this place pretty well :D. If you have any questions about the cool places to eat or hang out, come talk to me! I also like video games, biking, and soccer, so let’s get together and play! I’m available through email if you have any CS questions. Email me during the week or on the weekends and I’ll do my best to get back to you! Also, I’m a MECOP pre-select, so if you have any questions about how that works or about the program in general, I’ll do my best to help you out! Computer Science is a really difficult for many people. I came into OSU with zero knowledge of programming, and I went through that exact same stage of difficulty and frustration that many experience - I know how it feels. Trust me, it gets much better and I hope our class’ TAs can help make this beginning stage as painless and, hopefully, as fun as possible!"
+                },
+                {
+                    name: "Amber Horvath",
+                    picture: "prof_amber.jpg",
+                    description: "Hello, my name is Amber and I am a senior in Computer Science! I got interested in Computer Science through my involvement in undergraduate research, specializing in human-computer interaction. Despite the fact that I had no experience in computer science prior to starting, I was still accepted with open arms and the experience helped me to create a great community and have a solid support system. Having people you feel you can rely on in a major as rigorous as computer science is absolutely essential, so if you ever want to talk, feel free to contact me. I've had different work and life experiences, and would like to get to know you all more. I have experience as part of the LGBT community, along with being a woman in computer science."
+                },
+                {
+                    name: "Ernie Bodle",
+                    picture: "ernie.jpg",
+                    description: "Hello, my name is Ernie and I am a senior in ECE. I am an out of state student from Southern California. I'm currently working on designing and building a Digital Theremin for my Senior Design Course. If you want to know what it's like to be an ECE major the just ask!"
+                },
+                {
+                    name: "Jia Chen",
+                    picture: "jia2.jpg",
+                    description: "Hello, I am Jia Jun Chen, I am a senior in Computer Science with the information system option. I wasn't born in the United State, I arrived here 12 years ago. I understand Chinese Mandarin, and Cantonese. Just like many of you, I began this major with zero programming experience. But no worries, there are plenty of help around campus that can help, and TAs are one of such resources. Therefore, don't afraid to ask us for help, that is what we are here for. #FOR MORE INFORMATION PLEASE CONTACT DUNCAN :D#"
+                },
+                {
+                    name: "Taz Thenell",
+                    picture: "taz.jpg",
+                    description: "Hello, my name is Taz (Tasman really but I never go by that name) and I'm a 4th year computer science major in the systems option. I'm a Corvallis native and I attended Corvallis High School before coming to OSU. My passions include music and teaching. I've been part of the Oregon state Symphony for 6 years and I currently play assistant principle Viola. As far as teaching goes, I would eventually like to be a professor. One way I've tried to prepare myself for that goal is by TAing you rascals for more than two years."
+                },
+                {
+                    name: "Shannon Ernst",
+                    picture: "shannon.jpg",
+                    description: "Hello! I am Shannon Ernst and I am a senior in Computer Science in the Information System option. When I came to OSU, I didn't have any experience with coding aside from some basic web design. I also struggled with impostor syndrome and my transition to college, making my first two terms difficult. There were many times when I wanted to leave CS all together. What turned it around for me was spring term of my first year. I became an Engineering Ambassador with the College of Engineer and started doing outreach events to get women involved in Computer Science and Electrical Computer Engineering. People also began asking me for help on Computer Science assignments and I was actually able to help them! This showed me that I wasn't nearly as bad off as I thought. Finally, I earned a scholarship to go to the Grace Hopper Celebration for Women in Computing. This conference sealed my fate in Computer Science. I met so many incredible women who had experienced similar struggles. I was able to talk with numerous industry members at a career fair with over 200 hundred booths. I listened to symposiums on various computer science fields and heard ideas that I didn't even knew existed. I also landed an internship after four interviews. I came back to OSU after the conference knowing there was no other major for me, this is where I belonged. I now seek to help others find their passion in CS. Please come talk to me and join my group if you: are brand new to coding, are struggling with being a woman in EECS, combining computer science with your true passion, interested in internships, conferences, or getting involved at OSU, or simply need someone to talk to about college in general. I am here to help the best I can. I look forward to meeting you!"
+                },
+                {
+                    name: "Jake Fenger",
+                    picture: "jake.jpg",
+                    description: "Hello, I am Jacob and I am Senior in Computer Science. I have always had an interest in math and science which is why I chose CS. I play horse polo for Oregon State which requires me to travel around the west coast several times a term. If you have an interest in joining the club, send me an email for more information!"
+                },
+                {
+                    name: "Billy Buffum",
+                    picture: "Billy.jpg",
+                    description: "I'm a TA for CS"
+                },
+                {
+                    name: "Zoe Steine-Hanson",
+                    picture: "Zoeandcat.jpeg",
+                    description: "Hi! I’m Zöe and I’m a sophomore in Computer Science with a Psychology minor. I love cats and frozen yogurt, so if you want to come by look at adorable pictures of my cat or just need help with the class feel free to swing by my office hours."
+                },
+                {
+                    name: "Cierra Shawe",
+                    picture: "cierra.jpg",
+                    description: "Hi, I'm Cierra! I'm a senior from Bend, OR and am studying CS applied to cyber security. This is my third year TAing and I've had the opportunity to TA for almost all of the intro classes. I always enjoy being able to work with students. In high school, I did four years of robotics and then took a year off and was an au-pair in Germany. While I had a lot of robotics expereince coming into OSU, I had originally planned to be a Mech-E major, but ultimately chose to do CS, and I wouldn't go back."
+                },
+                {
+                    name: "Kyle Nichols",
+                    picture: "Nick.jpg",
+                    description: "Hi, all. This is my fourth year in Computer Science and my third year TAing, give or take some terms. One of those terms I was gone in Kyoto, Japan to study abroad, and another I was working on a MECOP internship at Mentor Graphics in Wilsonville. I come back to TAing because it's a rewarding job where I can meet great students. I do know some Japanese, but I haven't used it for a couple years, so it is rusty. I enjoy a variety of things in my free time, including video games, Netflix, and reading. I also love dancing and have taken Ballroom and Salsa classes both on-campus and off-campus."
+                },
+                {
+                    name: "Megan McCormick",
+                    picture: "megan.jpg",
+                    description: "Hello, my name is Megan McCormick. I am a Junior in Electrical and Computer Engineering and I'm also a TA for ECE112. I started teaching in high school as both a tutor and a music teacher at an elementry school. Taking CS161 as a freshman was my first coding experience and I found out that I really enjoyed it. In my free time I can often be found at Benton practicing violin or playing video games with my friends. Fun facts about me: I wasn't born here I'm from Soc Trang, Vietnam, I was adopted and brought here as a baby. I've been playing violin for 12 years. I am a member of the OSU Univeristy Choral and the Chamber Orchestra. I design and make my own cosplay costumes and props for Kumoricon and other conventions every year."
+                },
+                {
+                    name: "Philip Carroll",
+                    picture: "philip.jpg",
+                    description: "Hi, I'm Philip and I am all about the ECE life. I am planning to focus on Energy Systems and to get involved with undergraduate research in the WESRF lab here on campus once I start pro-school next fall. I also enjoy the design process and problem solving aspects of programming and had an amazing lab TA when I went through the intro courses, both reasons why I decided to work as a TA. For those of you that are new to programming, I know exactly how you feel as I entered into 161 with absolutely zero programming experience. Don't hesitate for a second to email me (calendar at bottom of this page) if you have registration/course planning questions or want some information about MECOP and other opportunities at Oregon State. For fun, I have recently taken up Archery and really enjoy heading out to the range every weekend to let some arrows fly. I have also been known to pull up and hit a jumper from time to time."
+                },
+                {
+                    name: "Louis Duvoisin",
+                    picture: "louis.jpg",
+                    description: "Hey all, my name is Louis, I'm a second year CS student from Portland. Something interesting about me is I hate writing bios."
+                },
+                {
+                    name: "Katherine Bajno",
+                    picture: "null",
+                    description: "Hi, I'm Katherine! I'm a junior in Computer Science with an option in Security from New York. I like video games, Netflix, and napping. I came into the 16X series without any previous coding experience. It was frustrating at times, but I took advantage of many office hours and ended up loving the major. I also switched my major/option seven times, so don't worry if you can't decide what to do :)"
+                },
+                {
+                    name: "Xiaomeng Li (Leo)",
+                    picture: "null",
+                    description: "Hello! My name is Xiaomeng Li, and you can just call me Leo. I am a sophomore major in Computer Science. I am a international student from China, and I have only been here for two years. If you are also a international student, don't be afraid to talk with me if you need anything. Also, I apologize for my grammar sometimes."
+                },
+                {
+                    name: "Daniel Grocki",
+                    picture: "null",
+                    description: "Hi! My name is Daniel Grocki and this is my second year as a Computer Science student. I am majoring in CS systems and getting a minor in math. This is my second term as a TA and my second time TA'ing 161. In my free time I enjoy going skiing, hiking, and doing just about anything outdoors. Just because you're a CS major doesn't mean you spend all day indoors! I am also a member of the Linux Users Group. If you are interested in learning more about Linux, be sure to stop by!"
+                }
+            ];
+
+
+        mixin person-info(ta)
+            - var path = "pics/"
+            - path += ta.picture;
+            div.person
+                div.namePhoto
+                    h3=ta.name
+                    div.imgContainer
+                        img(src=path)
+                p=ta.description
+
+
+        h2 Who Are My TAs?
+        div.taContainer
+            for person in ta
+                +person-info(person)
+
+
+        script(type='text/javascript').
+            $(document).ready(function () {
+                $(document).scroll(function () {
+                    if ($(document).scrollTop()  = 50) {
+                        $("nav").addClass("fix-place");
+                        $("html").addClass("extraSpace");
+                    } else {
+                        $("nav").removeClass("fix-place");
+                        $("html").removeClass("extraSpace");
+                    }
+                });
+            });

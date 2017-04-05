@@ -1,0 +1,72 @@
+@import "../resources/scss/modules/navigation";
+@import "../resources/scss/variables/reset";
+
+h2 {
+    text-align: center;
+}
+
+.taContainer {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.person {
+    margin: 5px;
+    width: 90%;
+    background: #dddddd;
+    padding: 10px;
+    display: inline-flex;
+    box-shadow: 3px 3px 3px #b2b2b2;
+    .namePhoto {
+        width: 20%;
+        max-width: 200px;
+        min-width: 150px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    h3 {
+        text-align: center;
+        font-size: 15pt;
+        margin: 0 0 3px 0;
+    }
+    .imgContainer {
+        width: 100%;
+        text-align: center;
+        img {
+            max-height: 150px;
+            max-width: 150px;
+        }
+    }
+    p {
+        text-indent: 15px;
+        width: 90%;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .person {
+        display: block;
+        .namePhoto {
+            width: 100%;
+            margin: auto;
+        }
+        p {
+            margin: 10px auto;
+        }
+    }
+    nav {
+        flex-wrap: wrap;
+    }
+    .fix-place {
+        position: static;
+        top: 0;
+    }
+    .extraSpace {
+        margin-top: 0px;
+    }
+}
