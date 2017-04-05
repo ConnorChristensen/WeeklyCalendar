@@ -46,7 +46,7 @@ gulp.task('scss', function() {
 //special case for the scss file in home
 gulp.task('scssHome', function() {
      return gulp
-        .src('./home.scss')
+        .src('./main.scss')
         .pipe(scss())
         .pipe(autoprefixer())
         .pipe(gulp.dest('./'));
