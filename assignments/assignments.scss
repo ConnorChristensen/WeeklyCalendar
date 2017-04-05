@@ -1,0 +1,24 @@
+@import "../resources/scss/modules/navigation";
+@import "../resources/scss/variables/reset";
+@import "../resources/scss/variables/fonts";
+
+h2 {
+    text-align: center;
+}
+
+.content {
+    padding: 0 2vw;
+    font-weight: 500;
+}
+
+.instructions {
+    max-width: 700px;
+    margin: auto;
+}
+
+.assignments {
+    margin: 50px auto 0 auto;
+    td {
+        padding: 7px;
+    }
+}

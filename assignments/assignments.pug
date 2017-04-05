@@ -1,0 +1,53 @@
+doctype html
+
+html(lang="en")
+    head
+        include ../resources/pug/head.pug
+        title="assignments"
+        link(href="assignments.css", rel="stylesheet")
+
+body
+    include ../resources/pug/navigation.pug
+    +navigation("../", "assignments")
+
+    h2 Assignments
+
+    div.content
+        div.instructions
+            p Please read the <a style="color:#0000FF" href="161_style_guideline.pdf">style guidelines</a> for this class.
+            
+            p Even though these are guidelines and not a standard for this class, 10 points of each assignment grade is based on having program and function headers, proper indentation, and vertical spacing between statements. BE CONSISTENT!!!
+            
+            p EVERY assignment in this course is <b>graded by demoing your work for 10 minutes with a TA</b>. You are required to <b>meet with a TA within two weeks of the due date</b> to demo.
+
+            p <b>Demo Outside 2 Weeks:</b> Assignments that are not demo'd within the acceptable time period will be subject to a 50 point deduction.
+            
+            p <b>Demo Late Assignments:</b> Late assignments must still be demoed within the two week demo period beginning from the assignment's original due date.
+
+            p <b>Missing a Demo:</b> If you miss your demo with a TA, you will receive a 10 point (one letter grade) deduction to that assignment for each demo missed.
+
+        table.assignments
+            tr
+                td Assignment #1 -
+                td
+                    a(href="assign/assign1.pdf") First C++ Program: Working with numbers
+            tr
+                td Assignment #2 -
+                td 
+                    a(href="assign/assign2.pdf") Design and Implement a Text Adventure Game
+            tr
+                td Assignment #3 -
+                td 
+                    a(href="assign/assign3.pdf") The Lost Art of Calculating Grades in a Class
+            tr
+                td Assignment #4 -
+                td 
+                    a(href="assign/assign4.pdf")
+            tr
+                td Assignment #5 -
+                td 
+                    a(href="assign/assign5.pdf")
+            tr
+                td Assignment #6 -
+                td 
+                    a(href="assign/assign6.pdf")
