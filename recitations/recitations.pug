@@ -1,0 +1,253 @@
+doctype html
+
+html(lang="en")
+    head
+        include ../resources/pug/head.pug
+        title="CS 161 Calendar"
+        link(href="recitations.css", rel="stylesheet")
+
+    body
+        include ../resources/pug/navigation.pug
+        +navigation("../", "recitations")
+        
+        div.content
+            h2(style="text-align: center") Recitations
+            p Please read this recitation syllabus thoroughly:
+            a(href="http://classes.engr.oregonstate.edu/eecs/winter2017/cs161-001/exercises/CS_161_Recitation_Syllabus.pdf") CS 161 Recitation Syllabus
+
+
+            -
+                var recitationSchedule = 
+                    [
+                        {
+                            Section: 24,
+                            Location: "MFD 105",
+                            Day: "Monday",
+                            Time: 11,
+                            Instructor: "Megan McCormick"
+                        },
+                        {
+                            Section: 25,
+                            Location: "MFD 105",
+                            Day: "Monday",
+                            Time: 12,
+                            Instructor: "Megan McCormick"
+                        },
+                        {
+                            Section: 26,
+                            Location: "GILK 115",
+                            Day: "Tuesday",
+                            Time: 10,
+                            Instructor: "Dan Van Horn"
+                        },
+                        {
+                            Section: 27,
+                            Location: "MFD 105",
+                            Day: "Tuesday",
+                            Time: 11,
+                            Instructor: "Nathan Burnett"
+                        },
+                        {
+                            Section: 28,
+                            Location: "BRC 136",
+                            Day: "Tuesday",
+                            Time: 12,
+                            Instructor: "Nathan Burnett"
+                        },
+                        {
+                            Section: 29,
+                            Location: "WALD 132",
+                            Day: "Tuesday",
+                            Time: 13,
+                            Instructor: "Nathan Burnett"
+                        },
+                        {
+                            Section: 30,
+                            Location: "GILK 104",
+                            Day: "Tuesday",
+                            Time: 14,
+                            Instructor: "Shannon Ernst"
+                        },
+                        {
+                            Section: 31,
+                            Location: "HOV 100",
+                            Day: "Tuesday",
+                            Time: 15,
+                            Instructor: "Shannon Ernst"
+                        },
+                        {
+                            Section: 32,
+                            Location: "GILK 108",
+                            Day: "Tuesday",
+                            Time: 16,
+                            Instructor: "Ty Haggerty"
+                        },
+                        {
+                            Section: 33,
+                            Location: "BEXL 102",
+                            Day: "Tuesday",
+                            Time: 17,
+                            Instructor: "Jake Fenger"
+                        },
+                        {
+                            Section: 53,
+                            Location: "STAG 112",
+                            Day: "Tuesday",
+                            Time: 10,
+                            Instructor: "Philip Carroll"
+                        },
+                        {
+                            Section: 34,
+                            Location: "BRC 136",
+                            Day: "Wednesday",
+                            Time: 11,
+                            Instructor: "Courtney Miller"
+                        },
+                        {
+                            Section: 35,
+                            Location: "MFD 105",
+                            Day: "Wednesday",
+                            Time: 12,
+                            Instructor: "Matthew Lohr"
+                        },
+                        {
+                            Section: 36,
+                            Location: "MFD 105",
+                            Day: "Wednesday",
+                            Time: 15,
+                            Instructor: "Robert Rosenberger"
+                        },
+                        {
+                            Section: 37,
+                            Location: "MFD 105",
+                            Day: "Wednesday",
+                            Time: 16,
+                            Instructor: "Robert Rosenberger"
+                        },
+                        {
+                            Section: 38,
+                            Location: "MFD 105",
+                            Day: "Wednesday",
+                            Time: 17,
+                            Instructor: "Louis Duvoisin"
+                        },
+                        {
+                            Section: 39,
+                            Location: "MFD 105",
+                            Day: "Thursday",
+                            Time: 11,
+                            Instructor: "Connor Christensen"
+                        },
+                        {
+                            Section: 40,
+                            Location: "BRC 136",
+                            Day: "Thursday",
+                            Time: 12,
+                            Instructor: "Austin Row"
+                        },
+                        {
+                            Section: 41,
+                            Location: "HOV 100",
+                            Day: "Thursday",
+                            Time: 14,
+                            Instructor: "Lily Shellhammer"
+                        },
+                        {
+                            Section: 42,
+                            Location: "MFD 105",
+                            Day: "Thursday",
+                            Time: 15,
+                            Instructor: "Billy Buffum"
+                        },
+                        {
+                            Section: 43,
+                            Location: "HOV 100",
+                            Day: "Thursday",
+                            Time: 15,
+                            Instructor: "Lily Shellhammer"
+                        },
+                        {
+                            Section: 44,
+                            Location: "MFD 105",
+                            Day: "Thursday",
+                            Time: 16,
+                            Instructor: "Taz Thenell"
+                        },
+                        {
+                            Section: 45,
+                            Location: "MFD 105",
+                            Day: "Thursday",
+                            Time: 17,
+                            Instructor: "Taz Thenell"
+                        },
+                        {
+                            Section: 46,
+                            Location: "MFD 105",
+                            Day: "Friday",
+                            Time: 9,
+                            Instructor: "Ty Haggerty"
+                        },
+                        {
+                            Section: 47,
+                            Location: "MFD 105",
+                            Day: "Friday",
+                            Time: 11,
+                            Instructor: "Robert Rosenberger"
+                        },
+                        {
+                            Section: 48,
+                            Location: "MFD 105",
+                            Day: "Friday",
+                            Time: 12,
+                            Instructor: "Duncan Millard"
+                        },
+                        {
+                            Section: 49,
+                            Location: "MFD 105",
+                            Day: "Friday",
+                            Time: 13,
+                            Instructor: "Duncan Millard"
+                        },
+                        {
+                            Section: 50,
+                            Location: "MFD 105",
+                            Day: "Friday",
+                            Time: 14,
+                            Instructor: "Shannon Ernst"
+                        },
+                        {
+                            Section: 51,
+                            Location: "MFD 105",
+                            Day: "Friday",
+                            Time: 15,
+                            Instructor: "Billy Buffum"
+                        },
+                        {
+                            Section: 52,
+                            Location: "MFD 105",
+                            Day: "Friday",
+                            Time: 16,
+                            Instructor: "Connor Christensen"
+                        }
+                    ]
+
+            mixin recitation-info(group)
+                tr
+                    td=group.Section
+                    td=group.Location
+                    td=group.Day
+                    td=group.Time
+                    td=group.Instructor
+
+
+            h2 Recitation Sections
+            table.recitations
+                tr
+                    th Section
+                    th Location
+                    th Day
+                    th Time
+                    th Instructor
+                    
+                for group in recitationSchedule
+                    +recitation-info(group)

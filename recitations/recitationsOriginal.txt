@@ -1,0 +1,234 @@
+Recitations
+Please read this recitation syllabus thoroughly: CS 161 Recitation Syllabus
+Example Design to Help you: George Polya's Steps to Problem-Solving
+Recitation #1 - Discuss Assignment #1 and Class/Syllabus Questions: Take-home Quiz
+Recitation #2 -
+Why/How to Create a Design and Test Plan? and Week 1 and 2 Questions: Take-home Quiz
+Recitation #3 - Worksheet: Decisions and Loops
+Recitation #4 - Design Discussion for Assignment #3/Worksheet: Loops and Functions
+Recitation #5 - Worksheet: More Functions
+Recitation #6 - Design Discussion for Assignment #4
+Recitation #7 -
+Recitation #8 - Design Discussion for Assignment #5
+Recitation #9 -
+Recitation #10 -Design Discussion for Assignment #6
+Peer-Led Peer-to-Peer Recitations
+
+Section:
+Location:
+Day:
+Time:
+Instructor:
+
+var recitationSchedule = [
+{
+Section: 24,
+Location: "MFD 105",
+Day: "M",
+Time: 11",
+Instructor: "Megan McCormick"
+},
+{
+Section: 25,
+Location: "MFD 105",
+Day: "M",
+Time: 12,
+Instructor: "Megan McCormick"
+},
+{
+Section: 26,
+Location: "GILK 115",
+Day: "T",
+Time: 10,
+Instructor: "Dan Van Horn"
+},
+{
+Section: 27",
+Location: "MFD 105",
+Day: "T",
+Time: 11,
+Instructor: "Nathan Burnett"
+},
+{
+Section: 28,
+Location: "BRC 136",
+Day: "T",
+Time: 12,
+Instructor: "Nathan Burnett"
+},
+{
+Section: 29,
+Location: "WALD 132",
+Day: "T",
+Time: 13,
+Instructor: "Nathan Burnett"
+},
+{
+Section: 30,
+Location: "GILK 104",
+Day: "T",
+Time: 14,
+Instructor: "Shannon Ernst"
+},
+{
+Section: 31,
+Location: "HOV 100",
+Day: "T",
+Time: 15,
+Instructor: "Shannon Ernst"
+},
+{
+Section: 32,
+Location: "GILK 108",
+Day: "T",
+Time: 16,
+Instructor: "Ty Haggerty"
+},
+{
+Section: 33,
+Location: "BEXL 102",
+Day: "T",
+Time: 17,
+Instructor: "Jake Fenger"
+},
+{
+Section: 34,
+Location: "BRC 136",
+Day: "W",
+Time: 11,
+Instructor: "Courtney Miller"
+},
+{
+Section: 35,
+Location: "MFD 105",
+Day: "W",
+Time: 12,
+Instructor: "Matthew Lohr"
+},
+{
+Section: 36,
+Location: "MFD 105",
+Day: "W",
+Time: 15,
+Instructor: "Robert Rosenberger"
+},
+{
+Section: 37,
+Location: "MFD 105",
+Day: "W",
+Time: 16,
+Instructor: "Robert Rosenberger"
+},
+{
+Section: 38,
+Location: "MFD 105",
+Day: "W",
+Time: 17,
+Instructor: "Louis Duvoisin"
+},
+{
+Section: 39,
+Location: "MFD 105",
+Day: "R",
+Time: 11,
+Instructor: "Connor Christensen"
+},
+{
+Section: 40,
+Location: "BRC 136",
+Day: "R",
+Time: 12,
+Instructor: "Austin Row"
+},
+{
+Section: 41,
+Location: "HOV 100",
+Day: "R",
+Time: 14,
+Instructor: "Lily Shellhammer"
+},
+{
+Section: 42,
+Location: "MFD 105",
+Day: "R",
+Time: 15,
+Instructor: "Billy Buffum"
+},
+{
+Section: 43,
+Location: "HOV 100",
+Day: "R",
+Time: 15,
+Instructor: "Lily Shellhammer"
+},
+{
+Section: 44,
+Location: "MFD 105",
+Day: "R",
+Time: 16,
+Instructor: "Taz Thenell"
+},
+{
+Section: 45,
+Location: "MFD 105",
+Day: "R",
+Time: 17,
+Instructor: "Taz Thenell"
+},
+{
+Section: 46,
+Location: "MFD 105",
+Day: "F",
+Time: 9,
+Instructor: "Ty Haggerty"
+},
+{
+Section: 47,
+Location: "MFD 105",
+Day: "F",
+Time: 11,
+Instructor: "Robert Rosenberger"
+},
+{
+Section: 48,
+Location: "MFD 105",
+Day: "F",
+Time: 12,
+Instructor: "Duncan Millard"
+},
+{
+Section: 49,
+Location: "MFD 105",
+Day: "F",
+Time: 13,
+Instructor: "Duncan Millard"
+},
+{
+Section: 50,
+Location: "MFD 105",
+Day: "F",
+Time: 14,
+Instructor: "Shannon Ernst"
+},
+{
+Section: 51,
+Location: "MFD 105",
+Day: "F",
+Time: 15,
+Instructor: "Billy Buffum"
+},
+{
+Section: 52,
+Location: "MFD 105",
+Day: "F",
+Time: 16,
+Instructor: "Connor Christensen"
+},
+{
+Section: 53,
+Location: "STAG 112",
+Day: "T",
+Time: 10,
+Instructor: "Philip Carroll"
+}
+]

@@ -1,0 +1,23 @@
+@import '../resources/scss/modules/navigation';
+@import '../resources/scss/variables/reset';
+
+.content {
+    margin: auto;
+    width: 80vw;
+    text-align: center;
+}
+
+.recitations {
+    margin: auto;
+    background: #606060;
+    color: white;
+    border-collapse: collapse;
+    th {
+        text-align: center;
+        padding: 10px;
+        background: #272727;
+    }
+    td {
+        padding: 10px 15px;
+    }
+}
