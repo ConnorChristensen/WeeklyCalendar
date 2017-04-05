@@ -1,0 +1,35 @@
+{
+    name: "Connor Christensen",
+    picture: "christensen.jpg",
+    description: "Hello! I'm a Junior in CS and super excited to learn and teach whatever CS things I can. In addition to coding, I also really like graphic arts, so if you want to learn a bunch of things about how to make your code look beautiful, please ask me by stopping by my office hours, sending me an email, shouting my name if you see me on the street, or anything else."
+},
+{
+    name: "Austin Row",
+    picture: "austin.jpg",
+    description: "Hi! I'm Austin and I am a Junior in computer science. I like watching Netflix, eating ice cream, and backpacking among other things. I really enjoy helping students so please come in to my office hours if you feel like you could use some help or if you just want to chat about the course in general. If you can't make it in to office hours, feel free to shoot me an email and I'll do my best to get back quickly!"
+},
+{
+    name: "Steven Gloyd",
+    picture: "steven.jpg",
+    description: "Hey, I'm Steven. I am a senior in ECE and I have been a TA for 161/162 for 8 terms. My professional interests are in embedded systems, which is low level programming for microcontrollers and FPGAs. If you have ever used an Arduino, you get the general idea. Embedded Systems Engineers tend to stay in the land of linux terminals and vim, so I know this stuff pretty well. Last spring I was at a MECOP internship at a computer vision company called Cognex doing FPGA design for high speed digital signals. My free time tends to be donated to either the OSU Robotics Club or the former OSU Solar Vehicle Team (now Pheonix Solar Racing). Outside of school I love to play video games. Recently I've been pretty into Overwatch (Who hasn't?) and Rainbox Six: Siege. Please feel free to contact me with any questions you may have, related to CS161 or not."
+},
+{
+    name: "Mikky Cecil",
+    picture: "mikky.png",
+    description: "Hi, I’m Mikky! I’m a senior in Computer Science, and this is my 4th term as a TA. I’m in the applied option with a focus on Web development, Mobile development, and Usability. I’ve completed both of my MECOP internships (web development at Emma and mobile development at Oracle). I also identify within the LGBTQ+ community, and have attended some clubs and events that the pride center puts on. In my free time I like to watch my favorite shows (which are currently Steven Universe, Voltron, and Yuri on Ice, but I also like lots of other shows!), draw, dance, cook, and cosplay when I have the time. If you’re curious about the applied option, MECOP, LGBTQ+ events/clubs, or any other stuff I’ve mentioned, feel free to drop by my office hours or send me an email!"
+},
+{
+    name: "Mason Sidebottom",
+    picture: "mason.jpg",
+    description: "Hello, I am Mason Sidebottom. This is my second year in the OSU computer science program. I have travelled all over the world, and have lots of unique experiences. I spend my free time snowboarding, wakeboarding, rock climbing, or finding new music.In highschool I played lacrosse, was on the diving team, and spent alot of time learning tricks on the trampoline. Also, I have a twin brother. I really enjoy tinkering with code, finding shortcuts, and customizing applications. If you want help modifying the appearance or behavior of VIM I would be happy to help. Also, I have experience in C++, C, Java, Javascript, and Python. Feel free to hit me with an email about anything."
+},
+                {
+    name: "Duncan Millard",
+    picture: "duncan.jpg",
+    description: "Howdy! I'm Duncan Millard and I'm a sophomore in Computer Science with an Applied option for Security. This is my third term as a TA. I'm around the TA rooms very often, and often do appointment or on-the-fly tutoring sessions. Feel free to shoot me an email for any questions or concerns you have about either the class material or the class structure itself."
+},
+                { 
+    name: "Jeffery Wentz",
+    picture: "Jeffrey2.jpg",
+    description: "Hello! I'm Jeffrey Wentz, a junior in Computer Science with a focus in Information Systems and this is my second year TAing. I'm an officer for the ACM Chapter at OSU and would love to talk to you about the club sometime. I'm also an RA, so I'm around campus quite a bit. I spend my time outside of school running or playing video games with friends."
+},
