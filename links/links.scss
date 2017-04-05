@@ -1,0 +1,21 @@
+@import "../resources/scss/modules/navigation";
+@import "../resources/scss/variables/reset";
+
+.content {
+    padding: 0 2vw;
+    h2 {
+        text-align: center;
+        font-weight: 700;
+    }
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: blue;
+    &:hover {
+        color: darkblue;
+    }
+}
