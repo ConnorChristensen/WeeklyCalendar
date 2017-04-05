@@ -1,0 +1,57 @@
+@import "../resources/scss/modules/navigation";
+@import "../resources/scss/variables/reset";
+
+.content {
+    padding: 0 2vw;
+    h2 {
+        text-align: center;
+        font-weight: 700;
+    }
+    .center {
+        text-align: center;
+    }
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: blue;
+    &:hover {
+        color: darkblue;
+    }
+}
+
+.clubsBox {
+    width: 90vw;
+    background: #d7d7d7;
+    margin: 1vw;
+    display: flex;
+    .text {
+        width: 85%;
+        h3 {
+            padding: 0 10px;
+            font-weight: 500;
+        }
+        p {
+            padding: 0 10px;
+        }   
+    }
+    .imgBox {
+        width: 15%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        img {
+            width: 100%;
+        }
+    }
+    table {
+        padding: 0 0 10px 10px;
+        td {
+            padding: 0 5px;
+        }
+    }
+}
