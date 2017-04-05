@@ -1,0 +1,18 @@
+{
+  "name": "gulp_test",
+  "version": "1.0.0",
+  "description": "this is a test for me to try out gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Connor Christensen",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-dest": "^0.2.3",
+    "gulp-if": "^2.0.2",
+    "gulp-pug": "^3.3.0",
+    "gulp-scss": "^1.4.0"
+  }
+}
