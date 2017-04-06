@@ -7,7 +7,7 @@ mixin navigation(traceback, current)
             else
                 a(href=traceback+"index.html").unselected home
 
-            each name, path in {"syllabus":"syllabus", "calendar":"calendar", "assignments":"assignments", "labs":"labs", "recitations":"recitations", "links":"useful links", "clubs":"student clubs", "TABios":"TA Bios"}
+            each name, path in {"index":"syllabus", "index":"calendar", "index":"assignments", "index":"labs", "index":"recitations", "index":"useful links", "index":"student clubs", "index":"TA Bios"}
                 if current === path
                     a(href=traceback+path+"/"+path+".html").selected=name
                 else
