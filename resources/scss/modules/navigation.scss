@@ -5,6 +5,7 @@
     font-family: $lato;
     font-weight: 300;
     background: $orange;
+    width: 100vw;
     h2 {
         margin: 0;
         padding: 10px 0;
@@ -12,7 +13,7 @@
         text-align: center;
     }
     nav {
-        background: $dark-grey;
+        background: $darkGrey;
         display: flex;
         justify-content: space-around;
         line-height: 50px;
@@ -30,7 +31,7 @@
             }
         }
         .selected {
-            background: #696969;
+            background: $lightGrey;
             text-decoration: none;
             width: 100%;
             text-align: center;
@@ -50,7 +51,61 @@
     top: 0;
 }
 
-@media screen and (max-width: 800px) {
+
+//Hamburger content:
+.hamburgerContainer {
+    width: 100vw;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    background: $darkGrey;
+    padding: 2px 5px;
+}
+
+.hamburger {
+    margin: auto;
+    width: 50px;
+}
+
+.hamburger .line{
+  width: 50px;
+  height: 5px;
+  background-color: #ecf0f1;
+  display: block;
+  margin: 8px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover{
+  cursor: pointer;
+}
+
+.hamburger.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+.hamburger.is-active .line:nth-child(1){
+  transform: translateY(13px) rotate(45deg);
+}
+
+.hamburger.is-active .line:nth-child(3){
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+
+@media screen and (min-width: 900px) {
+    .hamburgerContainer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .hamburgerContainer {
+        display: block;
+    }
+    .topBar {
+        margin-top: 50px;
+    }
     nav {
         flex-wrap: wrap;
     }

@@ -9,6 +9,11 @@ mixin navigation(traceback, current)
 
             each name, path in {"syllabus":"syllabus", "calendar":"calendar", "assignments":"assignments", "labs":"labs", "recitations":"recitations", "links":"useful links", "clubs":"student clubs", "TABios":"TA Bios"}
                 if current === path
-                    a(href=traceback+path+"/"+path+".html").selected=name
+                    a(href=traceback+path+"/").selected=name
                 else
-                    a(href=traceback+path+"/"+path+".html").unselected=name
+                    a(href=traceback+path+"/").unselected=name
+    div.hamburgerContainer
+        div.hamburger
+          span.line
+          span.line
+          span.line

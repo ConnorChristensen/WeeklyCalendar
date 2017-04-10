@@ -1,23 +1,42 @@
 @import '../resources/scss/modules/navigation';
 @import '../resources/scss/variables/reset';
 
+html {
+    overflow-x: hidden;
+}
+
 .content {
-    margin: auto;
-    width: 80vw;
     text-align: center;
 }
 
 .recitations {
     margin: auto;
-    background: #606060;
+    background: $lightGrey;
     color: white;
     border-collapse: collapse;
     th {
         text-align: center;
         padding: 10px;
-        background: #272727;
+        background: $darkGrey;
     }
     td {
         padding: 10px 15px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .content {
+        margin: auto;
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .content {
+        width: 100vw;
+    }
+    .recitations {
+        margin: 0;
+        width: 100vw;
     }
 }

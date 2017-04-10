@@ -3,6 +3,7 @@ doctype html
 html(lang="en")
     head
         include ../resources/pug/head.pug
+        +head("..")
         title="CS 161 Calendar"
         link(href="calendar.css", rel="stylesheet")
         script(type="text/javascript", src="calendar.js")
@@ -11,8 +12,8 @@ html(lang="en")
         include ../resources/pug/navigation.pug
         +navigation("../", "calendar")
         
-        h2(style="text-align: center") Nothing is here
-        p(style="text-align: center") The site is still under construction and this page has not been built yet
+        h2(style="text-align: center") Calendar
+        p(style="text-align: center") All items are tenative and subject to change
         
         div.calendarContainer
         
