@@ -73,6 +73,8 @@ gulp.task('pugHome', function() {
 gulp.task('watch',  function() {
     gulp.watch(scssPath, ['scss']);
     gulp.watch('./index.pug', ['pugHome']);
-    gulp.watch('./home.scss', ['scssHome']);
+    gulp.watch('./main.scss', ['scssHome']);
     gulp.watch(pugPath, ['pug']);
+    gulp.watch('resources/pug/*.pug', ['pug', 'pugHome']);
+    gulp.watch('resources/scss/**/*.scss', ['scss', 'scssHome']);
 });
