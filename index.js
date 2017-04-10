@@ -1,109 +1,93 @@
 $(document).ready(function () {
+    $(".hamburger").click(function(){
+        $(this).toggleClass("is-active");
+        $("nav").slideToggle();
+    });
+    
     var times = [
-        {
-            Section: 9,
-            Day: "T",
-            StartTime: 1600,
-            Type: "Lab",
-            TAs: ["Taz Thenell", "Lily Shellhammer", "Xiaomeng Li"]
-        },
         {
             Section: 10,
             Day: "T",
-            StartTime: 800,
+            StartTime: 1600,
             Type: "Lab",
-            TAs: ["Aidan Carson", "Katherine Bajno", "Alex Niebur"]
+            TAs: ["Alex Niebur", "Natalie Suderman", "Xiaomeng Li"]
         },
         {
             Section: 11,
             Day: "W",
-            StartTime: 800,
+            StartTime: 1800,
             Type: "Lab",
-            TAs: ["Shannon Ernst", "Austin Row", "Mason Sidebottom"]
+            TAs: ["Louis Duvoisin", "Megan McCormick", "Josh Diedrich"]
         },
         {
             Section: 12,
-            Day: "W",
-            StartTime: 1200,
+            Day: "R",
+            StartTime: 800,
             Type: "Lab",
-            TAs: ["Megan McCormick", "Daniel Grocki", "Xiaomeng Li"]
+            TAs: ["Zoe Steine-Hanson", "Daniel Grocki", "Lucas Campos-Davis"]
         },
         {
             Section: 13,
             Day: "R",
             StartTime: 1000,
             Type: "Lab",
-            TAs: ["Austin Row", "Nathan Burnett", "Kyle Nichols"]
+            TAs: ["Courtney Miller", "Ernie Bodle", "Jia Chen"]
         },
         {
             Section: 14,
-            Day: "R",
+            Day: "T",
             StartTime: 1200,
             Type: "Lab",
-            TAs: ["Jeff Wentz", "Zoe Steine-Hanson", "Austin Row"]
+			TAs: ["Carl Beery", "Aidan Carson", "Lucas Campos-Davis"]
         },
         {
             Section: 15,
-            Day: "R",
-            StartTime: 800,
-            Type: "Lab",
-            TAs: ["Philip Carroll", "Katherine Bajno", "Steven Gloyd"]
-},
-        {
-            Section: 16,
-            Day: "W",
+            Day: "T",
             StartTime: 1000,
             Type: "Lab",
-            TAs: ["Jake Fenger", "Ernie Bodle","Cierra Shawe"]
+            TAs: ["Kyle Nichols", "Courtney Miller", "Zoe Steine-Hanson"]
+        },
+        {
+            Section: 16,
+            Day: "F",
+            StartTime: 1400,
+            Type: "Lab",
+            TAs: ["Alex Niebur", "Katherine Bajno", "Aidan Carson"]
         },
         {
             Section: 17,
-            Day: "F",
-            StartTime: 800,
+            Day: "W",
+            StartTime: 1600,
             Type: "Lab",
-            TAs: ["Billy Buffum", "Shannon Ernst", "Jia Chen"]
+            TAs: ["Jake Fenger", "Cierra Shawe", "Chongxian Chen"]
         },
         {
             Section: 18,
-            Day: "F",
-            StartTime: 1000,
+            Day: "W",
+            StartTime: 1200,
             Type: "Lab",
-            TAs: ["Connor Christensen", "Louis Duvoisin", "Lucas Campos-Davis"]
+            TAs: ["Kyle Nichols", "Ernie Bodle", "Cierra Shawe"]
         },
         {
             Section: 19,
-            Day: "M",
-            StartTime: 800,
+            Day: "R",
+            StartTime: 1600,
             Type: "Lab",
-            TAs: ["Robert Rosenberger", "Courtney Miller", "Dan Van Horn"]
+            TAs: ["Jake Fenger", "Natalie Suderman", "Xiaomeng Li"]
         },
         {
             Section: 20,
-            Day: "M",
-            StartTime: 1000,
+            Day: "R",
+            StartTime: 1400,
             Type: "Lab",
-            TAs: ["Kyle Nichols", "Courtney Miller", "Connor Christensen"]
+            TAs: ["Megan McCormick", "Louis Duvoisin", "Dan Van Horn"]
         },
         {
             Section: 21,
-            Day: "M",
-            StartTime: 1200,
+            Day: "F",
+            StartTime: 1100,
             Type: "Lab",
-            TAs: ["Mikky Cecil", "Seth Gipe", "Daniel Grocki"]
-        },
-        {
-            Section: 22,
-            Day: "M",
-            StartTime: 1400,
-            Type: "Lab",
-            TAs: ["Mikky Cecil", "Matthew Lohr", "Billy Buffum"]
-        },
-        {
-            Section: 23,
-            Day: "M",
-            StartTime: 1600,
-            Type: "Lab",
-            TAs: ["Matthew Lohr", "Zoe Steine-Hanson", "Louis Duvoisin"]
+            TAs: ["Matthew Lohr", "Daniel Grocki", "Chongxian Chen"]
         }
 ];
 
