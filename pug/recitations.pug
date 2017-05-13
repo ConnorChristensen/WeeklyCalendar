@@ -6,6 +6,7 @@ html(lang="en")
         +head("..")
         title="CS 161 Calendar"
         link(href="recitations.css", rel="stylesheet")
+        script(type="text/javascript" src="../resources/js/autoMenuStick.js")
 
     body
         include ../resources/pug/navigation.pug
@@ -14,241 +15,207 @@ html(lang="en")
         div.content
             h2(style="text-align: center") Recitations
             p Please read this recitation syllabus thoroughly:
-            a(href="http://classes.engr.oregonstate.edu/eecs/winter2017/cs161-001/exercises/CS_161_Recitation_Syllabus.pdf") CS 161 Recitation Syllabus
-
-
-            -
-                var recitationSchedule = 
-                    [
-                        {
-                            Section: 24,
-                            Location: "MFD 105",
-                            Day: "Monday",
-                            Time: 11,
-                            Instructor: "Megan McCormick"
-                        },
-                        {
-                            Section: 25,
-                            Location: "MFD 105",
-                            Day: "Monday",
-                            Time: 12,
-                            Instructor: "Megan McCormick"
-                        },
-                        {
-                            Section: 26,
-                            Location: "GILK 115",
-                            Day: "Tuesday",
-                            Time: 10,
-                            Instructor: "Dan Van Horn"
-                        },
-                        {
-                            Section: 27,
-                            Location: "MFD 105",
-                            Day: "Tuesday",
-                            Time: 11,
-                            Instructor: "Nathan Burnett"
-                        },
-                        {
-                            Section: 28,
-                            Location: "BRC 136",
-                            Day: "Tuesday",
-                            Time: 12,
-                            Instructor: "Nathan Burnett"
-                        },
-                        {
-                            Section: 29,
-                            Location: "WALD 132",
-                            Day: "Tuesday",
-                            Time: 13,
-                            Instructor: "Nathan Burnett"
-                        },
-                        {
-                            Section: 30,
-                            Location: "GILK 104",
-                            Day: "Tuesday",
-                            Time: 14,
-                            Instructor: "Shannon Ernst"
-                        },
-                        {
-                            Section: 31,
-                            Location: "HOV 100",
-                            Day: "Tuesday",
-                            Time: 15,
-                            Instructor: "Shannon Ernst"
-                        },
-                        {
-                            Section: 32,
-                            Location: "GILK 108",
-                            Day: "Tuesday",
-                            Time: 16,
-                            Instructor: "Ty Haggerty"
-                        },
-                        {
-                            Section: 33,
-                            Location: "BEXL 102",
-                            Day: "Tuesday",
-                            Time: 17,
-                            Instructor: "Jake Fenger"
-                        },
-                        {
-                            Section: 53,
-                            Location: "STAG 112",
-                            Day: "Tuesday",
-                            Time: 10,
-                            Instructor: "Philip Carroll"
-                        },
-                        {
-                            Section: 34,
-                            Location: "BRC 136",
-                            Day: "Wednesday",
-                            Time: 11,
-                            Instructor: "Courtney Miller"
-                        },
-                        {
-                            Section: 35,
-                            Location: "MFD 105",
-                            Day: "Wednesday",
-                            Time: 12,
-                            Instructor: "Matthew Lohr"
-                        },
-                        {
-                            Section: 36,
-                            Location: "MFD 105",
-                            Day: "Wednesday",
-                            Time: 15,
-                            Instructor: "Robert Rosenberger"
-                        },
-                        {
-                            Section: 37,
-                            Location: "MFD 105",
-                            Day: "Wednesday",
-                            Time: 16,
-                            Instructor: "Robert Rosenberger"
-                        },
-                        {
-                            Section: 38,
-                            Location: "MFD 105",
-                            Day: "Wednesday",
-                            Time: 17,
-                            Instructor: "Louis Duvoisin"
-                        },
-                        {
-                            Section: 39,
-                            Location: "MFD 105",
-                            Day: "Thursday",
-                            Time: 11,
-                            Instructor: "Connor Christensen"
-                        },
-                        {
-                            Section: 40,
-                            Location: "BRC 136",
-                            Day: "Thursday",
-                            Time: 12,
-                            Instructor: "Austin Row"
-                        },
-                        {
-                            Section: 41,
-                            Location: "HOV 100",
-                            Day: "Thursday",
-                            Time: 14,
-                            Instructor: "Lily Shellhammer"
-                        },
-                        {
-                            Section: 42,
-                            Location: "MFD 105",
-                            Day: "Thursday",
-                            Time: 15,
-                            Instructor: "Billy Buffum"
-                        },
-                        {
-                            Section: 43,
-                            Location: "HOV 100",
-                            Day: "Thursday",
-                            Time: 15,
-                            Instructor: "Lily Shellhammer"
-                        },
-                        {
-                            Section: 44,
-                            Location: "MFD 105",
-                            Day: "Thursday",
-                            Time: 16,
-                            Instructor: "Taz Thenell"
-                        },
-                        {
-                            Section: 45,
-                            Location: "MFD 105",
-                            Day: "Thursday",
-                            Time: 17,
-                            Instructor: "Taz Thenell"
-                        },
-                        {
-                            Section: 46,
-                            Location: "MFD 105",
-                            Day: "Friday",
-                            Time: 9,
-                            Instructor: "Ty Haggerty"
-                        },
-                        {
-                            Section: 47,
-                            Location: "MFD 105",
-                            Day: "Friday",
-                            Time: 11,
-                            Instructor: "Robert Rosenberger"
-                        },
-                        {
-                            Section: 48,
-                            Location: "MFD 105",
-                            Day: "Friday",
-                            Time: 12,
-                            Instructor: "Duncan Millard"
-                        },
-                        {
-                            Section: 49,
-                            Location: "MFD 105",
-                            Day: "Friday",
-                            Time: 13,
-                            Instructor: "Duncan Millard"
-                        },
-                        {
-                            Section: 50,
-                            Location: "MFD 105",
-                            Day: "Friday",
-                            Time: 14,
-                            Instructor: "Shannon Ernst"
-                        },
-                        {
-                            Section: 51,
-                            Location: "MFD 105",
-                            Day: "Friday",
-                            Time: 15,
-                            Instructor: "Billy Buffum"
-                        },
-                        {
-                            Section: 52,
-                            Location: "MFD 105",
-                            Day: "Friday",
-                            Time: 16,
-                            Instructor: "Connor Christensen"
-                        }
-                    ]
-
-            mixin recitation-info(group)
-                tr
-                    td=group.Section
-                    td=group.Location
-                    td=group.Day
-                    td=group.Time
-                    td=group.Instructor
+                a(href="./CS_162_Recitation_Syllabus.pdf") CS 162 Recitation Syllabus
+                
+            p Here is an example design for a very simple problem: 
+                a(href="./Polya_template.pdf") Three Required Problem-Solving Steps in Design
+                
+            div.recitationWorksheets
+                p Recitation #1 - 
+                    a(href="./ws1_Student.pdf") Worksheet: C-strings, Dynamic Allocation, Pointers, and Struct Review
+                p Recitation #2 - 
+                    a(href="./ws2_Student.pdf") Worksheet: Makefiles and Beginning Classes Discussion
+                p Recitation #3 - 
+                    a(href="./ws3_Student.pdf") Worksheet: More Classes Discussion
+                p Recitation #4 - 
+                    a(href="./ws4_Student.pdf") Worksheet: Classes Big Three
+                p Recitation #5 - 
+                    a(href="./ws5_Student.pdf") Worksheet: Class Design
+                p Recitation #6 - 
+                    a(href="./ws6_Student.pdf") Worksheet: Class Design with Inheritance/"has a" vs. "is a"
+                p Recitation #7 - 
+                    a(href="./ws7_Student.pdf") 
+                p Recitation #8 - 
+                    a(href="./ws8_Student.pdf") 
+                p Recitation #9 - 
+                    a(href="./ws9_Student.pdf") 
+                p Recitation #10 - 
+                    a(href="./ws10_Student.pdf") 
 
 
             h2 Recitation Sections
-            table.recitations
-                tr
-                    th Section
-                    th Location
-                    th Day
-                    th Time
-                    th Instructor
+                table.recitations
                     
-                for group in recitationSchedule
-                    +recitation-info(group)
+                    tr
+                        th Section
+                        th Location
+                        th Day
+                        th Time
+                        th Instructor
+                    tr 
+                        td 22
+                        td GILK 115
+                        td Monday
+                        td 8am
+                        td Shannon Ernst
+
+                    tr 
+                        td 23
+                        td GILK 108
+                        td Monday
+                        td 9am
+                        td Carl Beery
+
+                    tr 
+                        td 24
+                        td GILK 100
+                        td Monday
+                        td 10am
+                        td Matt Lohr
+
+                    tr 
+                        td 25
+                        td GILK 108
+                        td Monday
+                        td 11am
+                        td Shannon Ernst
+
+                    tr 
+                        td 26
+                        td GILK 115
+                        td Tuesday
+                        td 8am
+                        td Henry Peterson
+
+                    tr 
+                        td 27
+                        td GILK 108
+                        td Tuesday
+                        td 9am
+                        td Courtney Miller
+
+                    tr 
+                        td 28
+                        td GILK 108
+                        td Tuesday
+                        td 12pm
+                        td Shannon Ernst
+
+                    tr 
+                        td 29
+                        td GILK 108
+                        td Tuesday
+                        td 1pm
+                        td Billy Buffum
+
+                    tr 
+                        td 30
+                        td GILK 115
+                        td Wednesday
+                        td 8am
+                        td Josh Diedrich
+
+                    tr 
+                        td 31
+                        td GILK 108
+                        td Wednesday
+                        td 9am
+                        td Josh Diedrich
+
+                    tr 
+                        td 32
+                        td GILK 100
+                        td Wednesday
+                        td 10am
+                        td Taz Thenell
+
+                    tr 
+                        td 33
+                        td GILK 108
+                        td Wednesday
+                        td 11am
+                        td Taz Thenell
+
+                    tr 
+                        td 34
+                        td GILK 115
+                        td Thursday
+                        td 8am
+                        td Henry Peterson
+
+                    tr 
+                        td 35
+                        td GILK 108
+                        td Thursday
+                        td 9am
+                        td Courtney Miller
+
+                    tr 
+                        td 36
+                        td GILK 108
+                        td Thursday
+                        td 12pm
+                        td Billy Buffum
+
+                    tr 
+                        td 37
+                        td GILK 108
+                        td Thursday
+                        td 1pm
+                        td Billy Buffum
+
+                    tr 
+                        td 38
+                        td GILK 115
+                        td Friday
+                        td 8am
+                        td Henry Peterson
+
+                    tr 
+                        td 39
+                        td GILK 108
+                        td Friday
+                        td 9am
+                        td Dan Van Horn
+
+                    tr 
+                        td 40
+                        td GILK 100
+                        td Friday
+                        td 10am
+                        td Matt Lohr
+
+                    tr 
+                        td 41
+                        td GILK 108
+                        td Friday
+                        td 11am
+                        td Taz Thenell
+
+                    tr 
+                        td 42
+                        td HOV 100
+                        td Wednesday
+                        td 12pm
+                        td Lily Shellhammer
+
+                    tr 
+                        td 43
+                        td HOV 100
+                        td Wednesday
+                        td 3pm
+                        td Lily Shellhammer
+
+                    tr 
+                        td 44
+                        td HOV 202
+                        td Thursday
+                        td 12pm
+                        td Lily Shellhammer
+
+                    tr 
+                        td 45
+                        td STAG 163
+                        td Thursday
+                        td 4pm
+                        td Shannon Ernst
