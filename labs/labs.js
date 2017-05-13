@@ -114,11 +114,9 @@ var times = [
         table += "<td>" + times[x]["Day"] + "</td>";
         table += "<td>" + convert24to12hour(times[x]["StartTime"]) + " - ";
         table += convert24to12hour(times[x]["StartTime"] + 150) + "</td>";
-//        table += '<td>';
         for (var y = 0; y < (times[x]["TAs"].length); y++) {
             table += "<td>" + times[x]["TAs"][y] + "</td>";
         }
-//        table += "</td>";
         table += "</tr>";
     }
     table += "</table>";

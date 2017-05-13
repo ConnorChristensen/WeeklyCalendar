@@ -1,45 +1,22 @@
 @import '../resources/scss/modules/navigation';
+@import "../resources/scss/modules/table";
 @import "../resources/scss/variables/reset";
 
 
+@include responsiveTable("table", 600px, 10px);
 
 table {
-    border-collapse: collapse;
-    background: $darkGrey;
-    margin: auto;
-    color: white;
-    tr:first-child {
-        background: $orange;
-        font-size: 14pt;
-        text-align: center;
-    }
-    th {
-        font-weight: 400;
-        padding: 10px;
-    }
-    td {
-        font-weight: 100;
-        padding: 5px;
-    }
-    td:nth-child(3) {
-        text-align: center;
-        width: 50px;
-    }
+    td:nth-of-type(1):before:not(.weekBreak) {content: "Date"; }
+    td:nth-of-type(2):before {content: "Lecture"; }
+    td:nth-of-type(3):before {content: "Slide"; }
+    td:nth-of-type(4):before {content: "Slide Notes"; }
+    td:nth-of-type(5):before {content: "Assignments"; }
+    
     .weekBreak {
-        text-align: center;
-        font-weight: 500;
-        font-size: 14pt;
-        padding-top: 20px;
-    }
-    .header {
-        td {
-            padding: 10px;   
+        @media screen and (max-width: 600px) {
+            background: $orange;
         }
-        background: $darkGrey;
-        font-size: 15pt;
         text-align: center;
-    }
-    a {
-        color: $lightBlue;
+        border: none !important;
     }
 }

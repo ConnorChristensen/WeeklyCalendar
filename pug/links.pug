@@ -1,58 +1,58 @@
 doctype html 
 
 html(lang="en") 
-head 
-    include ../resources/pug/head.pug 
-    +head("..")
-    title="CS 161 Labs" 
-    link(href="links.css", rel="stylesheet") 
-    
-body 
-    include ../resources/pug/navigation.pug
-    +navigation("../", "links") div.content
-    
-    div.content
-        h2 Important Links
-        h3
-            a(href="program_layout.pdf") C/C++ Program Layout<br>
-            a(href="161_style_guideline.pdf") CS 161 Style Guidelines<br>
-            Academic Dishonesty Policies
+    head 
+        include ../resources/pug/head.pug 
+        +head("..")
+        title="CS 161 Labs" 
+        link(href="links.css", rel="stylesheet") 
 
-        li
-            a(href="http://catalog.oregonstate.edu/ChapterDetail.aspx?key=75#Section2883") Oregon State University
+    body 
+        include ../resources/pug/navigation.pug
+        +navigation("../", "links") div.content
 
-        h3 UNIX and Vim Documentation
+        div.content
+            h2 Important Links
+            h3
+                a(href="program_layout.pdf") C/C++ Program Layout<br>
+                a(href="161_style_guideline.pdf") CS 161 Style Guidelines<br>
+                Academic Dishonesty Policies
+
             li
-                a(href="unix_ref_card.pdf") UNIX Reference Card
-            li
-                a(href="Linux_cmd_ref.pdf") Linux Command Basics
-            li
-                a(href="http://eecs.oregonstate.edu/it/") EECS SSH Login Info
-            li 
-                a(href="http://www.openvim.com/tutorial.html") Useful vim tutorial
-            li 
-                a(href="http://cygwin.com/index.html") Install Cygwin utilities (locally run Linux commands on windows) 
+                a(href="http://catalog.oregonstate.edu/ChapterDetail.aspx?key=75#Section2883") Oregon State University
+
+            h3 UNIX and Vim Documentation
+                li
+                    a(href="unix_ref_card.pdf") UNIX Reference Card
+                li
+                    a(href="Linux_cmd_ref.pdf") Linux Command Basics
+                li
+                    a(href="http://eecs.oregonstate.edu/it/") EECS SSH Login Info
+                li 
+                    a(href="http://www.openvim.com/tutorial.html") Useful vim tutorial
+                li 
+                    a(href="http://cygwin.com/index.html") Install Cygwin utilities (locally run Linux commands on windows) 
 
 
-        
 
-        h3 C/C++ Documentation
-            li 
-                a(href="http://zanasi.chem.unisa.it/download/C.pdf") The C Programming Language, 2nd Ed.
-            li 
-                a(href="http://www.acm.uiuc.edu/webmonkeys/book/c_guide/") The C Reference Guide
-            li 
-                a(href="http://www.gnu.org/software/gnu-c-manual/gnu-c-manual.pdf") GNU C Reference Manual
-            li 
-                a(href="http://www.cplusplus.com/doc/") C++ Documentation
-            li 
-                a(href="http://www.cprogramming.com/tutorial.html") C++ Tutorial
-            li 
-                a(href="http://www.open-std.org/jtc1/sc22/wg21/") The C++ Standards Committee
-            li 
-                a(href="http://gcc.gnu.org/onlinedocs/libstdc++/") GNU C++ Library
-            
-        h3 
-            a(href="https://secure.engr.oregonstate.edu:8000/teach.php?type=want_auth") Turn in Assigments (TEACH) 
-        h3 
-            a(href="http://eecs.oregonstate.edu/it/forms/computing-assistance.html") -- EECS Help Desk -- 
+
+            h3 C/C++ Documentation
+                li 
+                    a(href="http://zanasi.chem.unisa.it/download/C.pdf") The C Programming Language, 2nd Ed.
+                li 
+                    a(href="http://www.acm.uiuc.edu/webmonkeys/book/c_guide/") The C Reference Guide
+                li 
+                    a(href="http://www.gnu.org/software/gnu-c-manual/gnu-c-manual.pdf") GNU C Reference Manual
+                li 
+                    a(href="http://www.cplusplus.com/doc/") C++ Documentation
+                li 
+                    a(href="http://www.cprogramming.com/tutorial.html") C++ Tutorial
+                li 
+                    a(href="http://www.open-std.org/jtc1/sc22/wg21/") The C++ Standards Committee
+                li 
+                    a(href="http://gcc.gnu.org/onlinedocs/libstdc++/") GNU C++ Library
+
+            h3 
+                a(href="https://secure.engr.oregonstate.edu:8000/teach.php?type=want_auth") Turn in Assigments (TEACH) 
+            h3 
+                a(href="http://eecs.oregonstate.edu/it/forms/computing-assistance.html") -- EECS Help Desk -- 

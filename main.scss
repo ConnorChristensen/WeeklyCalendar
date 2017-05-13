@@ -1,23 +1,38 @@
 @import "resources/scss/modules/navigation";
+@import "resources/scss/modules/table";
 @import "resources/scss/variables/reset";
+
 
 h3 {
     text-align: center;
 }
 
+
+$breakpoint-alpha: 600px;
+
 .headline {
     display: flex;
+    @media screen and (max-width: $breakpoint-alpha) {
+        display: block;
+        .contactInfo {
+            display: block;
+            padding: 20px 0;
+        }
+        .announcements {
+            text-align: center;
+        }
+    }
     justify-content: space-around;
     padding-top: 5vh;
     .contactInfo {
         text-align: center;
         font-family: sans-serif;
         font-weight: 400;
-        font-size: 13px;
+        font-size: 12pt;
     }
     .announcements {
         font-family: sans-serif;
-        font-size: 13px;
+        font-size: 12pt;
         h3 {
             color: red;
             font-size: 16pt;
@@ -33,57 +48,11 @@ h3 {
     margin-bottom: 3vh;
 }
 
-.TAHoursInfo {
-    width: 800px;
-    margin: auto;
-    background: $darkGrey;
-    color: white;
-    border-collapse: collapse;
-    th {
-        font-size: 14pt;
-        background: $orange;
-        padding: 10px;
-    }
-    td {
-        font-size: 12pt;
-        padding: 10px;
-    }
-    td:first-child {
-        width: 150px;
-    }
-    
-    td:nth-child(2), td:nth-child(4) {
-        text-align: center;
-    }
-    a {
-        color: $lightBlue;
-    }
-}
+@include responsiveTable(".TAHours", $breakpoint-alpha);
 
-//@media screen and (max-width: 600px) {
-//    table, th, td, tr {
-//        display: block;
-//        width: 100vw;
-//    }
-//    th {
-//        display: none;
-//    }
-//    tr {
-//        border-bottom: 10px solid white;
-//    }
-//    td {
-//        border: none;
-//        border-bottom: 1px solid white;
-//        position: relative;
-//        padding-left: 50%;
-//    }
-//    td:before {
-//        position: absolute;
-//        top: 6px;
-//        left: 6px;
-//        padding-right: 10px;
-//        white-space: nowrap;
-//    }
-//    
-//    td:nth-of-type(1):before {content: "Name"; }
-//}
+.TAHours {
+    td:nth-of-type(1):before {content: "Name"; }
+    td:nth-of-type(2):before {content: "Email"; }
+    td:nth-of-type(3):before {content: "Office Hours"; }
+    td:nth-of-type(4):before {content: "Demo Hours"; }
+}

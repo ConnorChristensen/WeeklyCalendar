@@ -1,0 +1,62 @@
+@mixin responsiveTable($tag, $breakPoint, $seperator: 10px) {
+    #{$tag} {
+        max-width: 1300px;
+        margin: auto;
+        min-width: 300px;
+        background: $darkGrey;
+        color: white;
+        overflow: hidden;
+        border-collapse: collapse;
+        a {
+            color: $lightBlue;
+        }
+        th {
+            display: none;
+            font-weight: 400;
+            font-size: 14pt;
+            background: $orange;
+        }
+        td {
+            display: block;
+
+            @media screen and (max-width: $breakPoint) {
+                    &:first-child {
+                    padding-top: 15px;
+                }
+                    &:last-child {
+                    border-bottom: $seperator solid white;
+                    padding-bottom: 15px;
+                }
+            }
+            &:before {
+                //content: attr(data-th)": "; // who knew you could do this? The internet, that's who.
+                font-weight: bold;
+                width: 7em; //add space between title and content
+                display: inline-block; //align the content
+                @media (min-width: $breakPoint) {
+                    display: none;
+                }
+            }
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            @media (min-width: $breakPoint) {
+                padding: 1em !important;
+                display: table-cell;
+                padding: .25em .5em;
+                &:first-child {
+                    padding-left: 0;
+                }
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+        }
+        tr {
+            @media (min-width: $breakPoint) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

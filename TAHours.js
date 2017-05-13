@@ -214,9 +214,9 @@ $(document).ready(function () {
 
     for (var x = 0; x < TAinfo.length; x++) {
         table += "<tr>";
-        table += "<td>" + TAinfo[x]["name"] + "</td>";
+        table += '<td>' + TAinfo[x]["name"] + "</td>";
         table += '<td><a href="mailto:' + TAinfo[x]["userName"] + '@oregonstate.edu">' + TAinfo[x]["userName"] + "</a></td>";
-        table += "<td>" + TAinfo[x]["officeHours"] + "</td>";
+        table += '<td>' + TAinfo[x]["officeHours"] + "</td>";
         table += '<td><a href="' + TAinfo[x]["doodleLink"] + '">' + TAinfo[x]["demoHours"] + "</a></td>";
         table += "</tr>";
     }
