@@ -7,6 +7,7 @@ html(lang="en")
         title="CS 161 Calendar"
         link(href="calendar.css", rel="stylesheet")
         script(type="text/javascript", src="calendar.js")
+        script(type="text/javascript" src="../resources/js/autoMenuStick.js")
 
     body
         include ../resources/pug/navigation.pug
@@ -17,340 +18,329 @@ html(lang="en")
         
         div.calendarContainer
         
-        table
-            tr.header
-                th Date
-                th Lecture
-                th Slide
-                th Slide Notes
-                th Assigned Reading
-                th Assignments
-
-            tr
-                td.weekBreak(colspan="6") Week #1
-
-            tr
-                th 01/09
-                td Introduction, Syllabus
-                td
-                td
-                td 
-                    a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec01.pdf") MIT/Lecture 1
-
-
-            tr
-                th 01/011
-                td What is computer programming? -
-                td
-                    a(href="slides/slide1.pdf") slide1.pdf
-                td
-                    a(href="slides/slide1-notes.pdf") slide1-notes.pdf
-                td
-                    a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec01.pdf") MIT/Lecture 1
-
-
-            tr
-                th 01/13
-                td Programming in C++/Data Types, Variables, and Constants -
-                td
-                    a(href="slides/slide2.pdf") slide2.pdf, 
-                td
-                    a(href="slides/slide2-notes.pdf") slide2-notes.pdf
-                td 
-                    a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec01.pdf") MIT/Lecture 1 
-                td Assignment #1 Due Sunday, 1/15 by 11:59pm
-
-            tr
-                td.weekBreak(colspan="6") Week #2
-
-            tr
-                th 01/16
-                td No School, Martin Luther King, Jr. Day!!!
-                td
-                td
-                td 
-                    a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec01.pdf") MIT/Lecture 1
-
-
-            tr
-                th 01/18
-                td Arithmetic Expressions and User Input -
-                td
-                    a(href="slides/slide3.pdf") slide3.pdf, 
-                td 
-                    a(href="slides/slide3-notes.pdf") slide3-notes.pdf
-                td 
-                    a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec02.pdf") MIT/Lecture 2
-
-
-            tr
-                th 01/20
-                td Conditional Execution &amp; Design: If-else &amp; random numbers-
-                td
-                    a(href="slides/slide4.pdf") slide4.pdf,
-                td
-                    a(href="slides/slide4-notes.pdf") slide4-notes.pdf
-                td 
-                    a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec02.pdf") MIT/Lecture 2
-                td Assignment #2 Due Sunday, 1/22 by 11:59pm
-
-            tr
-                td.weekBreak(colspan="6") Week #3
-
-            tr
-                th 01/23
-                td Conditional Execution: Switch Statements &amp; ++, --, +=, etc.-
-                td
-                    a(href="slides/slide5.pdf") slide5.pdf
-                td
-                    a(href="slides/slide5-notes.pdf") slide5-notes.pdf
-                td 
-                    a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec02.pdf") MIT/Lecture 2
-
-
-            tr
-                th 01/25
-                td Repetition (for vs. while) - 
-                td
-                    a(href="slides/slide6.pdf") slide6.pdf, 
-                td
-                    a(href="slides/slide6-notes.pdf") slide6-notes.pdf,
-                    a(href="http://web.engr.oregonstate.edu/~parhammj/161/week2/") , 
-                    a(href="http://web.engr.oregonstate.edu/~parhammj/161/week3/")
-                td 
-                    a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec02.pdf") MIT/Lecture 2
-
-            tr
-                th 01/27
-                td Example Loops &amp; C++ String Objects - 
-                td
-                    a(href="slides/slide7.pdf") slide7.pdf,
-                td
-                    a(href="slides/slide7-notes.pdf") slide7-notes.pdf,
-                td 
-                    a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec03.pdf") MIT/Lecture 3
-
-
-            tr
-                td.weekBreak(colspan="6") Week #4
-
-            tr
-                th 01/30
-                td Error Handling/Debugging &amp; Begin Decomposition - 
-                td
-                    a(href="slides/slide8.pdf") slide8.pdf,
-                td
-                    a(href="slides/slide8-notes.pdf") slide8-notes.pdf,
-                td Review
-
-            tr
-                th 02/01
-                td Exam I Review - 
-                td
-                    a(href="slides/slide9-notes.pdf") slide9-notes.pdf,
-                td
-                    a(href="test1_noans_f16.pdf") Form 1
-                    br
-                    a(href="test1_ans_f16.pdf") Form 1 Key
-                td Review
-
-            tr
-                th 02/03
-                td Exam I
-                td
-                td
-                td
-                td Assignment #3 Due Sunday, 2/05, by 11:59pm
-
-            tr
-                td.weekBreak(colspan="6") Week #5
-
-            tr
-                th 02/06
-                td Exam I Results - Form 1:
-                td
-                    a(href="cs161exam1_w17_1.pdf") Form 1
-                    br
-                    a(href="cs161exam1_w17_1_ans.pdf") Form 1 Key
-                    br
-                    a(href="cs161exam1_w17_2.pdf") Form 2
-                    br
-                    a(href="cs161exam1_w17_2_ans.pdf") Form 2 Key
-                td
-                td 
-                    a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec03.pdf") MIT/Lecture 3
-
-
-            tr
-                th 02/08
-                td Default Args, Overloading, &amp; C++ Pass by Value vs. Pass by Ref -
-                td
-                    a(href="slides/slide10.pdf") slide10.pdf, 
-                td
-                    a(href="slides/slide10-notes.pdf") slide10-notes.pdf
-                td 
-                    a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec03.pdf") MIT/Lecture 3
-
-
-            tr
-                th 02/10
-                td C++ Pass by Value vs. Pass by Ref Demos - 
-                td
-                    a(href="slides/slide11.pdf") slide11.pdf, 
-                td
-                    a(href="slides/slide11-notes.pdf") slide11-notes.pdf
-                td 
-                    a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec05.pdf") MIT/Lecture 5
-
-            tr
-                td.weekBreak(colspan="6") Week #6
-
-            tr
-                th 02/13
-                td Begin Recursion -
-                td
-                    a(href="slides/slide12.pdf") slide12.pdf
-                td
-                    a(href="slides/slide12-notes.pdf") slide12-notes.pdf
-                td
-                    a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec05.pdf") MIT/Lecture5
-
-            tr
-                th 02/15
-
-                td Finish Recursion/Begin Memory Model -
-                td
-                    a(href="slides/slide13.pdf") slide13.pdf, 
-                td
-                    a(href="slides/slide13-notes.pdf") slide13-notes.pdf
-                td 
-                    a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec04.pdf") MITLecture 4
-
-            tr
-                th 02/17
-                td Introduction to 1-D Arrays (Static vs. Dynamic) -
-                td
-                    a(href="slides/slide14.pdf") slide14.pdf
-                td
-                    a(href="slides/slide14-notes.pdf") slide14-notes.pdf
-                td
-                    a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec04.pdf") MIT Lecture 4
-                td Assignment #4 Due Sunday, 2/19, by 11:59pm
-
-            tr
-                td.weekBreak(colspan="6") Week #7
-
-            tr
-                th 02/20
-                td 1-D Arrays/C++ vs. C Style Strings  -
-                td
-                    a(href="slides/slide15.pdf") slide15.pdf, 
-                td
-                    a(href="slides/slide15-notes.pdf") slide15-notes.pdf
-                td 
-                    a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec04.pdf") MIT Lecture 4
-
-            tr
-                th 02/22
-                td Static/Dynamic with Functions -
-                td
-                    a(href="slides/slide16.pdf") slide16.pdf,
-                td
-                    a(href="slides/slide16-notes.pdf") slide16-notes.pdf
-
-            tr
-                th 02/24
-                td Finish Static vs. Dynamic 1-d/Begin 2-d -
-                td
-                    a(href="slides/slide17.pdf") slide17.pdf,
-                td
-                    a(href="slides/slide17-notes.pdf") slide17-notes.pdf
-                td 
-                    a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec04.pdf") MIT Lecture 4
-
-
-            tr
-                td.weekBreak(colspan="6") Week #8
-
-            tr
-                th 02/27
-                td Static 2-d Arrays/Pointers -
-                td
-                    a(href="slides/slide18.pdf") slide18.pdf,
-                td
-                    a(href="slides/slide18-notes.pdf") slide18-notes.pdf
-                td 
-                    a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec04.pdf") MIT Lecture 4
-
-
-            tr
-                th 03/01
-                td Command-line Args &amp; Static vs. Dynamic -
-                td
-                    a(href="slides/slide20.pdf") slide20.pdf,
-                td
-                    a(href="slides/slide20-notes.pdf") slide20-notes.pdf
-                td 
-                    a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec04.pdf") MIT Lecture 4
-
-
-            tr
-                th 03/03
-                td Dynamic 2-d Arrays &amp; Functions -
-                td
-                    a(href="slides/slide21.pdf") slide21.pdf,
-                td
-                    a(href="slides/slide21-notes.pdf") slide21-notes.pdf
-                td
-                td Review - Assignment #5 Due Sunday, 3/05, by 11:59pm
-
-            tr
-                th Week #9
-
-            tr
-                th 03/06
-                td Exam II Review
-                td
-                td
-                td Review
-
-            tr
-                th 03/08
-                td Exam II
-
-            tr
-                th 03/10
-                td Exam II Results
-                td
-                td
-                td
-                    a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec06.pdf") MIT Lecture 6
-
-
-            tr
-                td.weekBreak(colspan="6") Week #10
-
-            tr
-                th 03/13
-                td Structures and Arrays of Structures
-                td
-                td
-                td
-                    a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec07.pdf") MIT Lecture 7
-
-
-            tr
-                th 03/15
-                td Classes Discussion -
-                td
-                    a(href="slides/slide23.pdf") slide23.pdf
-                td
-                    a(href="slides/slide23-notes.pdf") slide23-notes.pdf
-
-            tr
-                th 03/17
-                td Review and Candy!!!!
-                td
-                td
-                td
-                td Assignment #6 Due Sunday,3/19, by 11:59pm
+    table
+      tr
+        th Date
+        th Lecture
+        th Slide
+        th Slide Notes
+        th Assigned Reading
+        th Assignments
+      
+      tr
+        td.weekBreak(colspan="6") Week #1
+      
+      tr
+        th 04/03
+        td Introduction, Syllabus
+        td 
+        td 
+        td
+            a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec01.pdf")
+      
+      tr
+        th 04/05
+        td Review - Pointers, Arrays, and Structs
+        td
+            a(href="slide1.pdf") slide1
+        td
+            a(href="slide1-notes.pdf") slide1-notes
+        td
+            a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec01.pdf")
+      
+      tr
+        th 04/07
+        td Separation of Files/make
+        td 
+            a(href="slide2.pdf") slide2
+        td 
+            a(href="slide2-notes.pdf") slide2-notes
+        td
+            a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec01.pdf")
+        td assignment #1 Design Due Sunday, 4/09 by 11:59pm
+      
+      tr
+        td.weekBreak(colspan="6") Week #2
+      
+      tr
+        th 04/10
+        td File Input/Output
+        td
+            a(href="slide3.pdf") slide3
+        td
+            a(href="slide3-notes.pdf") slide3-notes
+        td
+            a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec01.pdf")
+      
+      tr
+        th 04/12
+        td Begin Classes vs. Structs
+        td
+            a(href="slide4.pdf") slide4
+        td
+            a(href="slide4-notes.pdf") slide4-notes
+        td
+            a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec02.pdf")
+      
+      tr
+        th 04/14
+        td Constructors, const vs. static keywords, this pointer
+        td
+            a(href="slide5.pdf") slide5
+        td
+            a(href="slide5-notes.pdf") slide5-notes
+        td
+            a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec02.pdf")
+        td assignment #1 Due Sunday, 4/16 by 11:59pm
+      
+      tr
+        td.weekBreak(colspan="6") Week #3
+      
+      tr
+        th 04/17
+        td Copy Constructor and Destructor
+        td
+            a(href="slide6.pdf") slide6
+        td
+            a(href="slide6-notes.pdf") slide6-notes
+        td
+            a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec02.pdf")
+      
+      tr
+        th 04/19
+        td Review Copy Constructor and Destructor 
+        td
+            a(href="slide7.pdf") slide7
+        td
+            a(href="slide7-notes.pdf") slide7-notes
+        td
+            a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec02.pdf")
+      
+      tr
+        th 04/21
+        td assignment #2 Questions/Copy Constructor
+        td
+            a(href="slide8.pdf") slide8
+        td
+            a(href="slide8-notes.pdf") slide8-notes
+        td
+            a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec03.pdf")
+        td assignment #2 Design Due Sunday, 4/23 by 11:59pm
+      
+      tr
+        td.weekBreak(colspan="6") Week #4
+      
+      tr
+        th 04/24
+        td Review Big Three
+        td
+            a(href="slide9.pdf") slide9
+        td
+            a(href="slide9-notes.pdf") slide9-notes
+        td 
+      
+      tr
+        th 04/26
+        td Finish Big Three
+        td
+            a(href="slide10.pdf") slide10
+        td
+            a(href="slide10-notes.pdf") slide10-notes
+        td 
+      
+      tr
+        th 04/28
+        td Really Finish Big Three/Address Static Members
+        td
+            a(href="slide11.pdf") slide11
+        td
+            a(href="slide11-notes.pdf") slide11-notes
+        td Review
+        td assignment #2 Due Sunday, 4/30, by 11:59pm
+      
+      tr
+        td.weekBreak(colspan="6") Week #5
+      
+      tr
+        th 05/01
+        td Exam I Review/Address Static Members
+            br
+            a(href="162sp16test1.pdf") Exam - No Answers
+            br
+            a(href="162sp16test1-ans.pdf") Exam - Review Answers
+        td
+        td
+        td
+            a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec03.pdf")
+      
+      tr
+        th 05/03
+        td Exam I
+        td 
+        td 
+        td
+            a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec03.pdf")
+      
+      tr
+        th 05/05
+        td Exam I Results &amp; Begin Inheritance
+        td
+            a(href="162_exam1_1.pdf") Exam I Results
+        td 
+        td
+            a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec05.pdf")
+        td assignment #3 Design Due Sunday, 5/07 by 11:59pm
+	  
+      tr
+        td.weekBreak(colspan="6") Week #6
+      
+      tr
+        th 05/08
+        td What is inherited? Protected vs. Private
+        td
+            a(href="slide12.pdf") slide12
+        td
+            a(href="slide12-notes.pdf") slide12-notes
+        td
+            a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec05.pdf")
+      
+      tr
+        th 05/10
+        td Friends, Operator Overload, &amp; Polymorphism
+        td
+            a(href="slide13.pdf") slide13
+        td
+            a(href="slide13-notes.pdf") slide13-notes
+        td
+            a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec04.pdf")
+      
+      tr
+        th 05/12
+        td Revisit Polymorphism
+        td
+            a(href="slide14.pdf") slide14
+        td
+            a(href="slide14-notes.pdf") slide14-notes
+        td
+            a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec04.pdf")
+        td assignment #3 Due Sunday, 5/14, by 11:59pm
+      
+      tr
+        td.weekBreak(colspan="6") Week #7
+      
+      tr
+        th 05/15
+        td Class Templates
+        td
+            a(href="slide15.pdf") slide15
+        td
+            a(href="slide15-notes.pdf") slide15-notes
+        td
+            a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec04.pdf")
+        td
+      
+      tr
+        th 05/17
+        td Introduction to the STL/Vectors
+        td
+            a(href="slide16.pdf") slide16
+        td
+            a(href="slide16-notes.pdf") slide16-notes
+      
+      tr
+        th 05/19
+        td STL/Iterators
+        td
+            a(href="slides/slide17.pdf") slide17
+        td
+            a(href="slides/slide17-notes.pdf") slide17-notes
+        td
+            a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec04.pdf")
+      
+      tr
+        td.weekBreak(colspan="6") Week #8
+      
+      tr
+        th 05/22
+        td C versus C++
+        td
+            a(href="slides/slide18.pdf") slide18
+        td
+            a(href="slides/slide18-notes.pdf") slide18-notes
+        td
+            a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec04.pdf")
+      
+      tr
+        th 05/24
+        td Concept of Linked Lists
+        td
+            a(href="slides/slide19.pdf") slide19
+        td
+            a(href="slides/slide19-notes.pdf") slide19-notes
+        td
+            a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec04.pdf")
+      
+      tr
+        th 05/26
+        td More Linked Lists/Big O Complexity
+        td
+            a(href="slides/slide20.pdf") slide20
+        td
+            a(href="slides/slide20-notes.pdf") slide20-notes
+        td Review 
+        td assignment #4 Due Sunday, 5/28, by 11:59pm
+      
+      tr
+        td.weekBreak(colspan="6") Week #9
+      
+      tr
+        th 05/29
+        td Memorial Day/No Class
+        td 
+        td 
+        td Review
+      
+      tr
+        th 05/31
+        td Exam II Review
+        td 
+        td 
+        td Review
+      
+      tr
+        th 06/02
+        td Exam II
+        td 
+        td 
+        td
+            a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec06.pdf")
+      
+      tr
+        td.weekBreak(colspan="6") Week #10
+      
+      tr
+        th 06/05
+        td Exam II Results
+        td 
+        td 
+        td
+            a(href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/lecture-notes/MIT6_096IAP11_lec07.pdf")
+      
+      tr
+        th 06/07
+        td Big O Complexity, Sorting, and Project Questions
+        td
+            a(href="slides/slide21.pdf") slide21
+        td
+            a(href="slides/slide21-notes.pdf") slide21-notes
+        td 
+      
+      tr
+        th 06/09
+        td Review and Candy!!!!
+        td 
+        td 
+        td 
+        td assignment #5 Due Sunday,6/11, by 11:59pm
+      
+    
