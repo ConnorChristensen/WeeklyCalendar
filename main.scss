@@ -1,6 +1,10 @@
 @import "resources/scss/modules/navigation";
 @import "resources/scss/variables/reset";
 
+h3 {
+    text-align: center;
+}
+
 .headline {
     display: flex;
     justify-content: space-around;
