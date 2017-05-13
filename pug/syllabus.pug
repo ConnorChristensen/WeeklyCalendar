@@ -12,171 +12,181 @@ body
     +navigation("../", "syllabus")
 
     div.syllabusContent
-        h2.center Syllabus
-
+        h2.centerSyllabus
         h3 Office Hours - 2101 KEC
         ul.none
-            li T 12-1pm
-            li WF 9:30-10:30am
+            li MW 8:30-9:30am &amp; WF 2-3pm
             li or by appointment
-
 
         h3 Class Information
         ul.none
-            li Class Email - <a style="color:#0000FF" href="mailto:cs161-001-f16@ENGR.ORST.EDU">cs161-001-f16@ENGR.ORST.EDU</a> (distributed to whole class, TAs, and instructor)
-            li TA Email - <a style="color:#0000FF" href="mailto:cs161-ta@ENGR.ORST.EDU">cs161-ta@ENGR.ORST.EDU</a> (distributed to all TAs and instructor)
+            li Class Email - 
+                a(href="mailto:cs162-001-sp17@ENGR.ORST.EDU") cs162-001-sp17@ENGR.ORST.EDU (distributed to whole class, TAs, and instructor)
+            li TA Email - 
+                a(href="mailto:cs162-ta@ENGR.ORST.EDU") cs162-ta@ENGR.ORST.EDU (distributed to all TAs and instructor)
             li DO NOT send messages through Canvas!!! Send emails directly to myself, TAs, or class using the above addresses!!!
-
 
         h3 Textbook Resources
         ul.none
-            li (Halterman) <a style="color:#0000FF" href="http://freecomputerbooks.com/Fundamentals-of-Programming-Cpp.html">http://freecomputerbooks.com/Fundamentals-of-Programming-Cpp.html</a>
-            li (O'Reilly) <a style="color:#0000FF" href="http://freecomputerbooks.com/Practical-Cpp-Programming.html">http://freecomputerbooks.com/Practical-Cpp-Programming.html</a>
-            li (Tutorials Pt.) <a style="color:#0000FF" href="http://freecomputerbooks.com/Learn-Cpp-Programming-Language.html">http://freecomputerbooks.com/Learn-Cpp-Programming-Language.html</a>
-            li (Gray) <a style="color:#0000FF" href="http://www.uow.edu.au/~nabg/ABC/ABC.html">http://www.uow.edu.au/~nabg/ABC/ABC.html</a> (older perspective)
-
+            li (Halterman) 
+                a(href="http://python.cs.southern.edu/cppbook/progcpp.pdf") http://python.cs.southern.edu/cppbook/progcpp.pdf
+            li (Soulié) 
+                a(href="http://www.cplusplus.com/files/tutorial.pdf") http://www.cplusplus.com/files/tutorial.pdf
+            li (Wikibooks) 
+                a(href="https://en.wikibooks.org/wiki/C%2B%2B_Programming") https://en.wikibooks.org/wiki/C%2B%2B_Programming
+            li (Miller) 
+                a(href="http://www.doc.ic.ac.uk/~wjk/C++Intro/") http://www.doc.ic.ac.uk/~wjk/C++Intro/
+            li (Gray) 
+                a(href="http://www.uow.edu.au/~nabg/ABC/ABC.html") http://www.uow.edu.au/~nabg/ABC/ABC.html (older perspective)
+            li (Downey)
+                a(href="http://greenteapress.com/thinkcpp/thinkCScpp.pdf") http://greenteapress.com/thinkcpp/thinkCScpp.pdf
 
         h3 Additional Textbook References
         table.books
-            tr
-                td  Author
-                td  Name
-                td  Edition
-                td  Publisher
-                td  Digital ISBN
-                td  Paperback ISBN
+            tr 
+                td Author
+                td Name
+                td Edition
+                td Publisher
+                td Digital ISBN
+                td Paperback ISBN
 
-            tr
-                td  Gaddis T., Walters, &amp; Godfrey (2014)
-                td  Starting out with C++ : early objects
-                td  8th
-                td  Boston, MA: Addison-Wesley.
-                td  978-0133449198
-                td  978-0133360929
+            tr 
+                td Gaddis T., Walters, &amp; Godfrey (2014)
+                td Starting out with C++ : early objects
+                td 8th
+                td Boston, MA: Addison-Wesley.
+                td 978-0133449198
+                td 978-0133360929
 
-            tr
-                td  Gaddis T., Walters, &amp; Godfrey (2014)
-                td  Starting out with C++ : early objects
-                td  8th
-                td  Boston, MA: Addison-Wesley.
-                td  978-0133449198
-                td  978-0133360929
+            tr 
+                td Schildt, H. (1998)
+                td C/C++ Programmer's Reference
+                td 3rd
+                td Berkley, CA: Osborne McGraw Hill
+                td 0-07-213293-0
+                td 0-07-882476-1
 
-            tr
-                td  Schildt, H. (1998)
-                td  C/C++ Programmer's Reference
-                td  3rd
-                td  Berkley, CA: Osborne McGraw Hill
-                td  0-07-213293-0
-                td  0-07-882476-1
+            tr 
+                td Savitch, W. (2012)
+                td Absolute C++ W/ MyProgrammingLab
+                td 5th
+                td Boston, MA: Addison-Wesley
+                td 978-0132846578
+                td 978-0132989923
 
-            tr
-                td  Savitch, W. (2012)
-                td  Absolute C++ W/ MyProgrammingLab
-                td  5th
-                td  Boston, MA: Addison-Wesley
-                td  978-0132846578
-                td  978-0132989923
-
-            tr
-                td  Dale, N. &amp; Weems, C. (2009)
-                td  Programming and Problem Solving with C++
-                td  5th
-                td  Jones &amp; Bartlett Publishers
+            tr 
+                td Dale, N. &amp; Weems, C. (2009)
+                td Programming and Problem Solving with C++
+                td 5th
+                td Jones &amp; Bartlett Publishers
                 td
-                td  978-0763771560
+                td 978-0763771560
 
 
 
         h3 Prerequisites
-        p MTH 112* or (MPT score &gt;= 33 or MPAL &gt;=61)
+        p (EECS 161 or CS 161)
+
+        h3 Course Description
+        p Basic data structures. Computer programming techniques and application of software engineering principles. Introduction to analysis of programs.
+
+        h3 Course Content:
+        ul.none
+            li File I/O
+            li Object-oriented programming principles
+            li Program design, debugging and testing
+            li Algorithm analysis
+            li Recursion
+            li Sorting and searching
+            li Linear data structures
+            li Debugging and testing
 
 
         h3 Course Objectives
-            ol
-                li Design and implement programs that require
-                ol(type="a")
-                    li various control statements involving selection and repetition
-                    li expressions with variables, constants, function calls, pointers, and arithmetic/relational operators with mixed data
-                    li arrays, strings, and other data structures
-                    li library functions and programmer-defined functions with parameter-passing by value and by reference
-                    li abstraction, modularity, separation of concerns
-                    li use of the object-oriented programming model
-                li Debug programming syntax and run-time errors.
-                li Produce recursive algorithms, and choose appropriately between iterative and recursive algorithms.
-                li Describe and apply basic software engineering design principles and software quality factors.
+        ol 
+            li Design and implement programs that require
+            ol(type="a")
+                li multiple classes and structures
+                li hierarchies of classes that uses inheritance and polymorphism
+                li an understanding of abstraction, modularity and separation of concerns
+
+            li 	Construct and use basic linear structures (arrays, stacks, queues, and various linked lists) in programs, and be able to describe instances appropriate for their use.
+            li 	Classify moderately complicated algorithms in these complexity classes: O(1), O(log n), O(n), O(n log n), and O(n2).
+            li 	Develop test-data sets and testing plans for programming projects. 
+            li 	Produce recursive algorithms, and choose appropriately between iterative and recursive algorithms. 
 
 
 
-        p.
-            A detailed description and time-line of the topics covered in this course can be on the
-            <a style="color:#0000FF" href="calendar.html">calendar page</a>. This calendar is strictly a guide for the course. It is tentative and subject to change. You can find the topics covered in the daily lectures in slides posted on the calendar page, and the assignments with their corresponding actual due dates are located on the
-            <a style="color:#0000FF" href="assignments.html">assignments page</a>.
-
-
-
+        p A detailed description and time-line of the topics covered in this course can be on the <a href="../calendar/calendar.html"/>calendar page</a>. This calendar is strictly a guide for the course. It is tentative and subject to change. You can find the topics covered in the daily lectures in slides posted on the calendar page, and the assignments with their corresponding actual due dates are located on the <a href="../assignments/assignments.html"> assignments page</a>.
 
         h3 Attendance Policy
         ul.none
-            li Class attendance is not required, but it is STRONGLY ENCOURAGED.  There are unannounced in-class exercises factored into your final grade.
+            li Class attendance is not required, but it is <b>STRONGLY ENCOURAGED.</b>
             li When a class is missed, it is the STUDENT'S responsibility to obtain any notes, assignments, etc. from classmates.
-            li Lab attendance is required. YOU WILL RECEIVE A ZERO FOR ANY UNEXCUSED MISSED LABS. A zero lab grade cannot change!!!
-            li Excused absences must be approved by your lecture instructor. BE PROACTIVE!!!
+            li Lab attendance is required. <b>YOU WILL RECEIVE A ZERO FOR ANY UNEXCUSED MISSED LABS.</b> A zero lab grade cannot change!!!
+            li Excused absences must be approved by your <b>lecture, lab, or recitation instructor.</b> <b>BE PROACTIVE!!!</b>
+            ul.none
+                li For labs, send an email to cs162-ta@engr.orst.edu with <b>CS 162 Lab Absence in the subject.</b>
+                li For recitations, send an email to cs162-recitation@engr.orst.edu with <b>CS 162 Recitation Absence in the subject.</b>
+                li For class absences, send an email to parhammj@engr.orst.edu with <b>CS 162 Course Absence in the subject.</b>
             li Students are still responsible for lab work missed even when their absence was excused.
-            li Students can ONLY make-up in-class exercises with an approved absence. BE PROACTIVE!!!
+            li Students can ONLY make-up in-class exercises with an approved absence. <b>BE PROACTIVE!!!</b>
             li Please, be on time for lecture AND turn off your cell phone ringer because it can be disruptive to other students, as well as the instructor.
-            li Laptops and other electronics are not allowed during lecture, unless approved by the instructor. There is a study that shows you lower yours and your peer's grade by using a laptop in the classroom: <a style="color:#0000FF" href="http://www.cbc.ca/news/technology/laptop-use-lowers-student-grades-experiment-shows-1.1401860">Laptop Study</a>. In addition, there are studies that show traditional note taking by hand aids in a student's learning: <a style="color:#0000FF" href="http://chronicle.com/blogs/linguafranca/2014/08/25/why-im-asking-you-not-to-use-laptops/?cid=cr&amp;utm_source=cr&amp;utm_medium=en">Another Study</a>. Our course requires those who have authorization by the instructor to sit in a particular section of the classroom to prevent distracting others.
+            li <b>Laptops and other electronics are NOT allowed during lecture, unless approved by the instructor.</b> There is a study that shows you lower yours and your peer's grade by using a laptop in the classroom: <a href="http://www.cbc.ca/news/technology/laptop-use-lowers-student-grades-experiment-shows-1.1401860">Laptop Study</a>. In addition, there are studies that show traditional note taking by hand aids in a student's learning: <a href="http://chronicle.com/blogs/linguafranca/2014/08/25/why-im-asking-you-not-to-use-laptops/?cid=cr&amp;utm_source=cr&amp;utm_medium=en"> Another Study</a>. Our course requires those who have authorization by the instructor to sit in a particular section of the classroom to prevent distracting others.
             li If the instructor is late for a lecture or a TA is late for lab, please remain in the classroom for 10 minutes.
-            li You must remain in the lab until (your work is complete or until the lab period has ended) and viewed/graded by a lab instructor.
+            li You must remain in the lab until (your work is complete or until the lab period has ended) <b>and viewed/graded</b> by a lab instructor.
 
 
         h3 About My Courses
-        ol
+        ol 
             li BE PROACTIVE, don't be reactive!!!
-            li BE RESPECTFUL, no one is perfect. Programming is difficult, and everyone in the class comes with different skills. The brain is a muscle and needs a work out in this area. You weren't born programming, you learned with practice.
+            li BE RESPECTFUL, no one is perfect. Programming is difficult, and everyone in the class comes with different skills. The brain is a muscle and needs a work out in this area. You weren't born programming, you learned with practice. Please read the document on <a href="community.html">establishing a positive community</a>.
             li HAVE A GROWTH MINDSET!!! Everyone around you does not know more than you:) On the other hand, you do not know everything!
             li "For every teacher there are two learners." This is a learning environment for all skills. You can learn from helping others.
             li ACTIVE LEARNING! I need YOU to participate.
             li "...it is far more honorable to fail than to cheat."
+            li "The task of the modern educator is not to cut down jungles but to irrigate deserts."
 
-
-        h3 Grade Evaluation Scores for labs, exercises, assignments, and exams will be posted on Canvas as they are graded.
+        h3 Grade Evaluation Scores for labs, recitations, assignments, and exams will be posted on Canvas as they are graded.
         h4 Labs - 10%
         ul.none
             li There are 10 total labs in this course, i.e. one to be completed each lecture week.
-            li Some parts of the lab will be group work while others will be individual work. You can submit one copy for any portion of the lab that is group work.
+            li You MUST attend the lab in which you are registered, unless receiving permission PRIOR to missing the lab!!! (Read Attendance policy!)
+            li Some parts of the lab will be group work while others will be individual work.  You can submit one copy for any portion of the lab that is group work.
             li Labs are graded on a 10-point scale and primarily based on participation and effort, rather than correctness.
-            li You are required to bring a laptop to the lab.
+            li You are <b>required to bring a laptop to the lab</b>.
             li These labs are supposed to enhance the lectures using hands-on learning.
             li Labs are designed to be finished in 70-90 minutes and graded during lab time by your lab instructor.
-            li You can finish up to 3 points of the lab at home and bring it with you to the next week's lab for a grade. You must show your update from the previous lab within the first 15 minutes of the current lab to redeem points on the prior lab, otherwise the work is not accepted.
-            li If you have a problem with a lab grade, you must contact your lab instructor through EMAIL within ONE WEEK of receiving your grade. After one week, you will not be able to dispute your grade.
+            li If you attended a lab and did not finish, you can finish <b>up to 3 points of the lab</b> at home and bring it with you to the next week's lab for a grade.  You must show your update from the previous lab within the first 15 minutes of the current lab to redeem points on the prior lab, otherwise the work is not accepted.
+            li If you have a problem with a lab grade, <b>you must contact your lab instructor through EMAIL within ONE WEEK</b> of receiving your grade.  After one week, you will not be able to dispute your grade.
 
         h4   Recitation Exercises - 20%
         ul.none
-            li The recitations consist of 4 designs, 8 peer-to-peer design critiques, and 10 quizzes.
-            li Attendance is required for recitations, and YOU WILL RECEIVE A ZERO for the attendance and quiz portion of ANY UNEXCUSED MISSED RECITATION!!!
-            li You MUST attend the recitation in which you are registered, unless receiving permission from the professor PRIOR to missing the recitation!!!
+            li The recitations consist of 5 designs, 10 peer-to-peer design critiques, and 10 quizzes.
+            li Attendance is required for recitations, and <b>YOU WILL RECEIVE A ZERO</b> for the quiz portion of ANY UNEXCUSED MISSED RECITATION!!! 
+            li You MUST attend the recitation in which you are registered, unless receiving permission PRIOR to missing the recitation!!! (Read Attendance policy!)
             li The recitations are used to check and supplement student understanding, and the grades will be based on designs (40%), quizzes (40%), and critiques (20%).
-
 
         h4   Assignments - 30%
         ul.none
-            li There are 6 total assignments to be completed over the course of this class.
+            li There are 5 total assignments to be completed over the course of this class.
             li DO NOT expect answers to emails about assignments after 5pm on the day it is due!!!
-            li All assignments include writing a computer program, which MUST compile and execute on ENGR. There will be written explanations of the solution to turn in (as a pdf) with each implementation.
-            li Programming assignments that do not compile will receive a grade of zero.
+            li All assignments include writing a computer program, which MUST compile and execute on ENGR. 
+            li Programming assignments that do not compile will receive a grade of <b>zero on the implementation portion of the assignment without any exceptions. 
             li Assignments are to be turned in before Midnight (<strong>by 11:59pm) on Sunday night, otherwise the assignment is late.
-            li Programs are evaluated on how well they solve the assigned problem (adherence to program specification), proper formatting/use of comments, and creativity:)
-            li Only one late assignment, up to 5 days late, is accepted without any penalty. All other late assignments will not be graded. You turn in your assignment to TEACH, just as you would normally.
-            li You will turn in your assignments through hand-in on the <a style="color:#0000FF" href="https://secure.engr.oregonstate.edu:8000/teach.php?type=want_auth"> TEACH website</a>. All assignments are turned into TEACH, and designs are turned into CANVAS!!!
-            li EVERY assignment in this course is graded by demoing your work for 10 minutes with a TA. You are required to meet with a TA within two weeks from the due date to demo. You are penalized for failure to demo within two weeks or missing a scheduled appointment.
-            ol.space
-                li Failure to demo within two weeks receives an automatic 50 point deduction.
-                li If you miss a scheduled appointment without informing the TA PRIOR to the appointment, then you lose 10 points for rescheduling within 24 hours, 25 points within a week, and anything rescheduled outside of a week is an automatic 50 point deduction.
-            li If you have a problem with an assignment grade, you must contact your TAs through EMAIL within ONE WEEK of receiving your grade. After one week, you will not be able to dispute your grade.
-            li Remember to use your TAs because they are the ones who execute, read, and grade the assignments.
+            li You will turn in your assignments through hand-in on the 
+                a(href="https://secure.engr.oregonstate.edu:8000/teach.php?type=want_auth") TEACH website.  
+            li Programs are evaluated on how well they solve the assigned problem (adherence to program specification), proper formatting/use of comments, and creativity:) 
+            li <b>Only one late assignment is allowed during the term</b>. This assignment will be accepted without penalty up to 3 days from the original due date. Outside of 3 days, the assignment will not be accepted!!!  You turn in your assignment to TEACH, just as you would normally.
+            li Programming assignments in this course are graded by demoing your work for 10 minutes with a TA. You are required to <b>meet with a TA</b> within two weeks of the due date to demo. You can schedule a demo with a TA on the <a href="../index.html">home page</a> in the far right column of the bottom table labeled "Grading Hours".
+        ul.none
+            li <b>Demo Outside 2 Weeks:</b> Assignments that are not demo'd within the acceptable time period will be subject to a 50 point deduction.
+            li <b>Demo Late Assignments:</b> Late assignments must still be demoed within the two week demo period beginning from the assignment's original due date.
+            li <b>Missing a Demo:</b> If you miss your demo with a TA, you will receive a 10 point (one letter grade) deduction to that assignment for each demo missed.
 
+            li If you have a problem with an assignment grade, <b>you must contact your TAs through EMAIL</b> within ONE WEEK of receiving your grade.  After one week, you will not be able to dispute your grade.
+            li Remember to use your TAs because they are the ones who execute, read, and grade the assignments.
 
         h4  Exams - 30%  (15% each exam)
         ul.none
@@ -184,95 +194,103 @@ body
             li The exams are true/false and multiple-choice, and they will be given during lecture time.
             li A student must notify the instructor BEFORE the exam to schedule a make-up.
 
-
         h4  Final Exam- 10%
         ul.none
             li There will be a cumulative final exam.
             li The final exam may include any combination of programming, written work, and explanation of existing code.
             li A student must notify the instructor BEFORE the final to schedule a make-up.
 
-
-        h4  Proficiency Demo <font size="2" style="color:red;">(Ability to Keep a Passing Grade (C or above)!)</font>
+        h4  Proficiency Demo <span style="color: red">(Ability to Keep a Passing Grade (C or above)!)</span>
         ul.none
             li You will take a pass/fail live proficiency coding demo during the lab in week 10.
             li There will be a practice demo given in week 5 with material from the first half of the class. In the practice demo, you will be scored on a pass/almost/no-pass score to give you feedback on where you stand in the class.
-            li If you do not have a passing grade in the class (below C), then failing the proficiency demo cannot hurt your grade because you are not expected to be proficienct (C or above) in the class to move forward. However, if you have a passing grade in the class (C or above), then you are expected to pass the proficiency demo to keep your passing grade in the class, i.e. you cannot receive higher than a C- without passing the proficiency demo.
-            li Do not freak out!!! If you have a passing grade for your assignments and YOU have been the one to do the work, then you should be able to pass the proficiency demo program.
+            li If you do not have a passing grade in the class (below C), then failing the proficiency demo cannot hurt your grade because you are not expected to be proficienct (C or above) in the class to move forward.  However, if you have a passing grade in the class (C or above),then you are expected to pass the proficiency demo to keep your passing grade in the class, i.e. <b>you cannot receive higher than a C- without passing the proficiency demo.</b>
+            li Do not freak out!!!  If you have a passing grade for your assignments and YOU have been the one to do the work, then you should be able to pass the proficiency demo program.
             li A student must notify the instructor BEFORE the final demo to schedule a make-up.
-
-
 
         h3 Grading Scale
         table
             tbody
-                tr
-                    td(halign="left") Grade
+                tr 
+                    td Grade
                     th Average
-                tr
-                    td(halign="left") A
-                    th  93 or greater
-                tr
-                    td(halign="left") A-
-                    th  90 - 92
-                tr
-                    td(halign="left") B+
-                    th  87 - 89
-                tr
-                    td(halign="left") B
-                    th  83 - 86
-                tr
-                    td(halign="left") B-
-                    th  80 - 82
-                tr
-                    td(halign="left") C+
-                    th  77 - 79
-                tr
-                    td(halign="left") C
-                    th  73 - 76*
+
+                tr 
+                    td A
+                    th 93 or greater
+
+                tr 
+                    td A-
+                    th 90 - 92
+
+                tr 
+                    td B+
+                    th 87 - 89
+
+                tr 
+                    td B
+                    th 83 - 86
+
+                tr 
+                    td B-
+                    th 80 - 82
+
+                tr 
+                    td C+
+                    th 77 - 79
+
+                tr 
+                    td C
+                    th 73 - 76*
+
                 tr.yellow
-                    td(halign="left") C-
-                    th  70 - 72
+                    td C-
+                    th 70 - 72
+
                 tr.red
-                    td(halign="left") D+
-                    th  67 - 69
+                    td D+
+                    th 67 - 69
+
                 tr.red
-                    td(halign="left") D
-                    th  63 - 66
+                    td D
+                    th 63 - 66
+
                 tr.red
-                    td(halign="left") D-
-                    th  60 - 62
+                    td D-
+                    th 60 - 62
+
                 tr.red
-                    td(halign="left") F
-                    th  less than 60
+                    td F
+                    th less than 60
 
 
-            p * REMINDER: A passing grade for core classes in CS is a C or above. A C-, 72 or below, is not a passing grade for CS majors.
+
+        p * REMINDER: A passing grade for core classes in CS is a C or above. A C-, 72 or below, is not a passing grade for CS/ECE majors.
 
         h3 Academic Dishonesty
-        p.indent.
-            I encourage students to work together and learn from one another on labs and assignments. However, I do expect you to turn in your OWN work for every assignment. Assignments are NOT paired-programming, and all assignments are checked for similarities with others in the class, prior class assignments, and work published online!!! Working with someone does not include copying someone else's work and changing a small amount of that work, such as variable names, comments, spacing, etc. During group assignments you and your partners may turn in one assignment per group with everyone's name attached. Working together is discouraged on exams and the final. At NO point should you copy work from the internet, and if you do copy material from an external resource, then you need to cite the resource and author(s). Paying someone to complete you work is unacceptable and will result in immediate referral to the university!!! Cheating and plagiarism are not taken lightly!
-            You will receive a zero on your first abuse of these rules, and in the case of shared work, the student sharing the work and the student copying the work will both receive zeros. In addition, the academic dishonesty charge will be documented and sent to your school's dean and the Office of Student Conduct
-            <a style="color:#0000FF" href="http://studentlife.oregonstate.edu/studentconduct/faculty">http://studentlife.oregonstate.edu/studentconduct/faculty</a>
-                
-            The bottom line is: Each student is expected to understand all aspects of the programs s/he submits for credit!!!
+        p.indent I encourage students to work together and learn from one another on labs and assignments. However, I do expect you to turn in your OWN work for every assignment. Assignments are NOT paired-programming, and all assignments are checked for similarities with others in the class, prior class assignments, and work published online!!! Working with someone does not include copying someone else's work and changing a small amount of that work, such as variable names, comments, spacing, etc. During group assignments you and your partners may turn in one assignment per group with everyone's name attached. Working together is discouraged on exams and the final. At NO point should you copy work from the internet, and if you do copy material from an external resource, then you need to cite the resource and author(s). Paying someone to complete you work is unacceptable and will result in immediate referral to the university!!! Cheating and plagiarism are not taken lightly!
+        p You will receive a zero on your first abuse of these rules, and in the case of shared work, the student sharing the work and the student copying the work will both receive zeros. In addition, the academic dishonesty charge will be documented and sent to your school's dean and the Office of Student Conduct <a href="http://studentlife.oregonstate.edu/studentconduct/faculty"> http://studentlife.oregonstate.edu/studentconduct/faculty</a> The bottom line is: Each student is expected to understand all aspects of the programs s/he submits for credit!!!
 
-            Please, read the university dishonesty policy, <a style="color:#0000FF" href="http://studentlife.oregonstate.edu/studentconduct/faculty"> OAR 576-015-0020 (2) Academic or Scholarly Dishonesty</a>
+        p Please, read the university dishonesty policy:
+        a(href="http://studentlife.oregonstate.edu/studentconduct/faculty")  OAR 576-015-0020 (2) Academic or Scholarly Dishonesty
+
 
 
 
         h3 Students with Disabilities
-        p.indent. 
-            "Accommodations for students with disabilities are determined and approved by Disability Access Services (DAS). If you, as a student, believe you are eligible for accommodations but have not obtained approval please contact DAS immediately at 541-737-4098 or at http://ds.oregonstate.edu. DAS notifies students and faculty members of approved academic accommodations and coordinates implementation of those accommodations. While not required, students and faculty members are encouraged to discuss details of the implementation of individual accommodations."
+        p "Accommodations for students with disabilities are determined and approved by Disability Access Services (DAS). If you, as a student, believe you are eligible for accommodations but have not obtained approval please contact DAS immediately at 541-737-4098 or at http://ds.oregonstate.edu. DAS notifies students and faculty members of approved academic accommodations and coordinates implementation of those accommodations. While not required, students and faculty members are encouraged to discuss details of the implementation of individual accommodations."
 
-            Students with documented disabilities who may need accommodations, who have any emergency medical information the instructor should be aware of, or who need special arrangements in the event of evacuation, should make an appointment with the instructor as early as possible, and no later than the first week of the term. Class materials will be made available in an accessible format upon request.
+        p Students with documented disabilities who may need accommodations, who have any emergency medical information the instructor should be aware of, or who need special arrangements in the event of evacuation, should make an appointment with the instructor as early as possible, and no later than the first week of the term. Class materials will be made available in an accessible format upon request.
+
 
 
 
         h3 Religious Accommodation of Students Policy
-        p. 
-            Oregon State University recognizes a diverse group of students, and the university accommodates diverse religious holidays. Please read the policy on religious accommodations for students:
-            
-            <a style="color:#0000FF" href="http://oregonstate.edu/oei/sites/default/files/religious_accommodations_for_student_policy_05_17_2012_v2.pdf">religious_accomodations</a>
+
+        p Oregon State University recognizes a diverse group of students, and the university accommodates diverse religious holidays. Please read the policy on religious accommodations for students:
+
+
+        a(href="http://oregonstate.edu/oei/sites/default/files/religious_accommodations_for_student_policy_05_17_2012_v2.pdf") religious_accomodations
 
 
 
