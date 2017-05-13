@@ -8,6 +8,11 @@ table {
     background: $darkGrey;
     margin: auto;
     color: white;
+    tr:first-child {
+        background: $orange;
+        font-size: 14pt;
+        text-align: center;
+    }
     th {
         font-weight: 400;
         padding: 10px;
@@ -16,14 +21,21 @@ table {
         font-weight: 100;
         padding: 5px;
     }
+    td:nth-child(3) {
+        text-align: center;
+        width: 50px;
+    }
     .weekBreak {
         text-align: center;
+        font-weight: 500;
+        font-size: 14pt;
+        padding-top: 20px;
     }
     .header {
         td {
             padding: 10px;   
         }
-        background: $orange;
+        background: $darkGrey;
         font-size: 15pt;
         text-align: center;
     }

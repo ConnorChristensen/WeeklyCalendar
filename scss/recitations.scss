@@ -9,18 +9,28 @@ html {
     text-align: center;
 }
 
+.recitationWorksheets {
+    width: auto;
+    margin: auto;
+    p {
+        text-align: left;   
+    }
+}
+
 .recitations {
     margin: auto;
-    background: $lightGrey;
+    background: $darkGrey;
     color: white;
     border-collapse: collapse;
     th {
         text-align: center;
         padding: 10px;
-        background: $darkGrey;
+        background: $orange;
+        font-size: 14pt;
     }
     td {
         padding: 10px 15px;
+        font-size: 12pt;
     }
 }
 

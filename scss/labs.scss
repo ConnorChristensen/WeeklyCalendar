@@ -20,3 +20,26 @@
         padding: 7px;
     }
 }
+
+
+.labsTable {
+    width: 800px;
+    background: $darkGrey;
+    color: white;
+    border-collapse: collapse;
+    margin: 5vh auto;
+    th {
+        padding: 10px;
+        font-size: 14pt;
+        background: $orange;
+        color: white;
+    }
+    td {
+        padding: 10px;
+    }
+    td:nth-child(1),
+    td:nth-child(2),
+    td:nth-child(3) {
+        text-align: center;
+    }
+}
