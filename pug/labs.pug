@@ -6,6 +6,7 @@ html(lang="en")
         +head("..")
         title="CS 161 Labs"
         link(href="labs.css", rel="stylesheet")
+        script(type="text/javascript" src="labs.js")
 
     body
         include ../resources/pug/navigation.pug
@@ -14,44 +15,46 @@ html(lang="en")
         div.content
             div.instructions
                 h2 Labs
-                p If you attended a lab and did not finish, you can finish <b>up to 3 points of the lab at home</b> and bring it with you to the next week's lab for a grade.  You must show your update from the previous lab within the first 15 minutes of the current lab to redeem points on the prior lab, otherwise the work is not accepted.
+                p If you attended a lab and did not finish, you can finish up to 3 points of the lab at home and bring it with you to the next week's lab for a grade.  You must show your update from the previous lab within the first 15 minutes of the current lab to redeem points on the prior lab, otherwise the work is not accepted.
 
             table.assignments
                 tr                      
                     td LAB #1 - 
                     td 
-                        a(href="labs/lab1.pdf") Setup &amp; Introduction to Unix, vim, and C++ 
-                tr                              
+                        a(href="lab1.pdf") Arrays, Structs, Command-line args, and Interface/Implementation Files
+                tr
                     td LAB #2 - 
                     td
-                        a(href="labs/lab2.pdf") Constants, Variables, Expressions, Random Numbers, and If/Else 
-                tr                              
+                        a(href="lab2.pdf") File I/O: Creating a Webpage for Dummies
+                tr
                     td LAB #3 - 
                     td
-                        a(href="labs/lab3.pdf") Guess Who Game: More Decisions, Loops, and Strings 
+                        a(href="lab3.pdf") Describe "Have a" and "Uses" relationship/Creating constructors, mutators, accessors
                 tr                              
                     td LAB #4 - 
                     td
-                        a(href="labs/lab4.pdf")
-                tr                              
+                        a(href="lab4.pdf") Practice Big Three
+                tr
                     td LAB #5 - 
-                    td WEEK 5 Practice Proficiency Demos
+                    td WEEK 5 Practice Proficiency Demos: DEAR 119 Begin Inheritance
                 tr
                     td LAB #6 - 
                     td
-                        a(href="labs/lab6.pdf")
-                tr                              
+                        a(href="lab6.pdf") Inheritance and Operator Overload
+                tr
                     td LAB #7 - 
                     td
                         a(href="labs/lab7.pdf")
-                tr                              
+                tr
                     td LAB #8 - 
                     td
                         a(href="labs/lab8.pdf")
-                tr                              
+                tr
                     td LAB #9 - 
                     td
                         a(href="labs/lab9.pdf")
-                tr                              
+                tr
                     td LAB #10 - 
                     td WEEK 10 Proficiency Demos
+                    
+            div.labs
